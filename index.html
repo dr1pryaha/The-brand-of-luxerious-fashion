@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/header_logo.svg"
+      type="image/x-icon"
+    />
+    <title>The brand of luxerious fashion</title>
+  </head>
+  <body>
+    <!-- Обертка для липкого футера-->
+    <div id="wrap">
+      <!-- Header сайта -->
+      <header id="header">
+        <section class="page-header container">
+          <div class="header-menu">
+            <div class="header-menu-logo">
+              <a href="#"><img src="./img/header_logo.svg" alt="Logo" /></a>
+
+              <form action="search" class="search-icon-form">
+                <input
+                  class="search-icon-form__input"
+                  id="search"
+                  type="search"
+                />
+                <label for="search" class="search-icon-form__label">
+                  <svg
+                    class="search-icon-form__svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z"
+                    />
+                  </svg>
+                </label>
+              </form>
+
+              <!-- <a href="#"
+                ><img
+                  src="./img/header_icon_search.svg"
+                  alt="Search-icon"
+              /></a> -->
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#"><img src="./img/nav_menu.svg" alt="Menu" /></a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#"><img src="./img/nav_user.svg" alt="User" /></a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#"
+                    ><img src="./img/nav_basket!.svg" alt="Basket"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </header>
+
+      <!-- Основная часть сайта -->
+      <main id="main">
+        <!-- ПРОМО -->
+        <section class="poster">
+          <div class="poster-column container">
+            <div class="poster-image">
+              <img
+                src="./img/header_img!.png"
+                alt="Poster"
+                class="poster-img"
+              />
+            </div>
+            <div class="poster-title">
+              <div class="poster-text">
+                <h1 class="poster-text-heading">The brand</h1>
+                <h2 class="poster-text-nowrap">
+                  of luxerious <span class="mark-color">fashion</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="poster">
+            <div class="poster-promo container">
+              <h1 class="poster-promo-text-heading">The brand</h1>
+              <h2 class="poster-promo-text-nowrap">
+                of luxerious <span class="mark-color">fashion</span>
+              </h2>
+            </div>
+          </section> -->
+
+        <!-- Аксессуары -->
+        <section class="offer container">
+          <div class="offer-wrap">
+            <a href="#" class="offer-woomen"
+              ><img
+                src="./img/offer_1.png"
+                alt="Wooman"
+                class="offer-woomen-image"
+              />
+              <div class="offer-title-woomen">
+                <h5>30% off</h5>
+                <h3 class="mark-color">for women</h3>
+              </div>
+            </a>
+            <a href="#" class="offer-men"
+              ><img src="./img/offer_2.png" alt="Man" class="offer-men-image" />
+              <div class="offer-title-men">
+                <h5>hot deal</h5>
+                <h3 class="mark-color">for men</h3>
+              </div>
+            </a>
+            <a href="#" class="offer-kids"
+              ><img
+                src="./img/offer_3.png"
+                alt="Kids"
+                class="offer-kids-image"
+              />
+              <div class="offer-title-kids">
+                <h5>new arrivals</h5>
+                <h3 class="mark-color">for kids</h3>
+              </div>
+            </a>
+          </div>
+
+          <a href="#" class="offer-accesories"
+            ><img
+              src="./img/offer_4.png"
+              alt="Accesories"
+              class="offer-accesories-image"
+            />
+            <div class="offer-title-accesories">
+              <h5>luxirous & trendy</h5>
+              <h3 class="mark-color">accesories</h3>
+            </div>
+          </a>
+        </section>
+
+        <!-- Продукты -->
+        <section class="products container">
+          <h2 class="products-title">Fetured Items</h2>
+          <p class="products-text">
+            Shop for items based on what we featured in this week
+          </p>
+
+          <div class="products-wrap">
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/fetured_Items_1.png"
+                  alt="image: products-card-1"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/fetured_Items_2.png"
+                  alt="image: products-card-2"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/fetured_Items_3.png"
+                  alt="image: products-card-3"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+          </div>
+
+          <div class="products-wrap">
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/fetured_Items_4.png"
+                  alt="image: products-card-4"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/fetured_Items_5.png"
+                  alt="image: products-card-5"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/fetured_Items_6.png"
+                  alt="image: products-card-6"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+          </div>
+
+          <a href="#" class="products-button"> Browse All Product </a>
+        </section>
+
+        <!-- Характерная черта -->
+        <section class="feature">
+          <div class="feature-wrap container">
+            <div class="feature-description">
+              <img
+                src="./img/form_icon_1.svg"
+                class="feature-img"
+                alt="Feature 1"
+              />
+              <h5 class="feature-title">Free Delivery</h5>
+              <p class="feature-text">
+                Worldwide delivery on&nbsp;all. Authorit tively morph<wbr />
+                next-generation innov tion with extensive models.
+              </p>
+            </div>
+            <div class="feature-description">
+              <img
+                src="./img/form_icon_2.svg"
+                class="feature-img"
+                alt="Feature 1"
+              />
+              <h5 class="feature-title">Sales & discounts</h5>
+              <p class="feature-text">
+                Worldwide delivery on&nbsp;all. Authorit tively morph<wbr />
+                next-generation innov tion with extensive models.
+              </p>
+            </div>
+            <div class="feature-description">
+              <img
+                src="./img/form_icon_3.svg"
+                class="feature-img"
+                alt="Feature 1"
+              />
+              <h5 class="feature-title">Quality assurance</h5>
+              <p class="feature-text">
+                Worldwide delivery on&nbsp;all. Authorit tively morph<wbr />
+                next-generation innov tion with extensive models.
+              </p>
+            </div>
+          </div>
+          -->
+        </section>
+      </main>
+
+      <!-- Footer сайта -->
+      <footer id="footer">
+        <!-- Отзывы и регистрация -->
+        <section class="footer-review">
+          <div class="footer-review-info container">
+            <article class="footer-review-info-comment">
+              <img
+                src="./img/form_photo.png"
+                alt=""
+                class="footer-review-info-comment-userpic"
+              />
+              <p class="footer-review-info-comment-text">
+                &#8220;Vestibulum quis porttitor dui! Quisque<wbr /> viverra
+                nunc&nbsp;mi,
+                <span class="footer-review-info-comment-text-mark"
+                  >a&nbsp;pulvinar purus <wbr /> condimentum</span
+                >&#8221;
+              </p>
+            </article>
+
+            <div class="footer-review-subscribe">
+              <h2>subscribe</h2>
+              <h4>for our newletter and promotion</h4>
+              <form class="footer-review-subscribe-form">
+                <input
+                  type="email"
+                  class="footer-review-subscribe-form-input"
+                  placeholder="Enter Your Email"
+                  aria-label="Enter Your Email"
+                  aria-describedby="button-submit"
+                />
+                <button
+                  class="footer-review-subscribe-form-btn"
+                  type="submit"
+                  id="button-submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- Права и Соиальные сети -->
+        <section class="footer-info container">
+          <div class="footer-info-rights">
+            &copy; 2021 Brand All Rights Reserved.
+          </div>
+          <div class="footer-info-social">
+            <ul class="footer-info-social-list">
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://www.facebook.com/geekbrains.ru"
+                  class="footer-info-social-list-item-link icon-facebook"
+                ></a>
+              </li>
+
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://www.instagram.com/geekbrains.ru/"
+                  class="footer-info-social-list-item-link icon-instagram"
+                ></a>
+              </li>
+
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://www.pinterest.ru/geekbrainsdesignhistory/"
+                  class="footer-info-social-list-item-link icon-pinterest"
+                ></a>
+              </li>
+
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://twitter.com/geekbrains__ru"
+                  class="footer-info-social-list-item-link icon-twitter"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
