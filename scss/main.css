@@ -18,7 +18,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 19px 0;
+  padding: 13px 0;
 }
 
 .header-menu-logo {
@@ -35,22 +35,17 @@
 }
 
 .search-icon-form {
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 35px;
   margin: 0 0 0 30%;
   position: relative;
-  /*   border: 1px solid #fff; */
 }
 
 .search-icon-form__label {
   display: block;
   width: 100%;
   height: 100%;
-  /*   border: 1px solid green; */
   background: url("../img/header_icon_search.svg") cover no-repeat;
-  /*   background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent; */
 }
 
 .search-icon-form__label:hover .search-icon-form__svg {
@@ -86,7 +81,6 @@
 }
 
 .search-icon-form__input:focus {
-  /*   display: block; */
   width: 500px;
   min-height: 20px;
   -webkit-transition: width 1s ease;
@@ -123,52 +117,28 @@
   padding-right: 33px;
 }
 
-.poster {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background: #f1e4e6;
+.poster-promo {
   width: 100%;
   margin-bottom: 65px;
-}
-
-.poster-column {
+  min-height: 764px;
+  background-color: #f1e4e6;
+  background-image: url("../img/header_img!.png");
+  background-repeat: no-repeat;
+  background-position: -4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.poster-image {
-  margin-left: -44px;
-}
-
-.poster-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.poster-text {
-  padding-bottom: 381px;
-  margin-right: 90px;
+.poster-promo-text {
+  margin-right: 85px;
+  margin-bottom: 100px;
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
@@ -176,7 +146,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.poster-text::before {
+.poster-promo-text::before {
   content: " ";
   background: #f16d7f;
   width: 12px;
@@ -185,7 +155,7 @@
   margin-right: 10px;
 }
 
-.poster-text-heading {
+.poster-promo-text-heading {
   color: #222222;
   font-weight: 900;
   font-size: 48px;
@@ -193,7 +163,7 @@
   text-transform: uppercase;
 }
 
-.poster-text-nowrap {
+.poster-promo-text-nowrap {
   text-transform: uppercase;
   white-space: nowrap;
   font-weight: 700;
