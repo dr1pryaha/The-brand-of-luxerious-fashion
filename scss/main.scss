@@ -120,11 +120,12 @@
 
 // Стилизация блока poster
 .poster {
+  background-color: #f1e4e6;
+
   &-promo {
     width: 100%;
     margin-bottom: 65px;
     min-height: 764px;
-    background-color: #f1e4e6;
     background-image: url("../img/header_img!.png");
     background-repeat: no-repeat;
     background-position: -4%;
@@ -177,8 +178,6 @@
 // Стилизация блока offer
 
 .offer {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 96px;
   color: #ffffff;
   text-transform: uppercase;
@@ -191,61 +190,50 @@
     flex-wrap: nowrap;
   }
 
-  &-woomen,
-  &-men {
+  &-card {
+    width: 100%;
+    min-width: 360px;
+    min-height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 30px;
     position: relative;
-    // overflow: hidden;
+  }
 
-    &-image {
-      max-width: 100%;
-      transition: all 0.2s linear;
-      display: block;
+  &-woomen {
+    background-image: url("../img/offer_1.png");
+    background-repeat: no-repeat;
+  }
 
-      // &:hover {
-      //   transform: scale(1.2); /* Увеличиваем масштаб */
-      // }
-    }
+  &-men {
+    background-image: url("../img/offer_2.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 360px;
   }
 
   &-kids {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    // overflow: hidden;
-
-    &-image {
-      max-width: 100%;
-      transition: all 0.2s linear;
-      display: block;
-
-      // &:hover {
-      //   transform: scale(1.2); /* Увеличиваем масштаб */
-      // }
-    }
+    background-image: url("../img/offer_3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 360px;
+    min-height: 260px;
   }
 
   &-accesories {
+    background-image: url("../img/offer_4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
     position: relative;
-    // overflow: hidden;
-
-    &-image {
-      max-width: 100%;
-      transition: all 0.2s linear;
-      display: block;
-
-      // &:hover {
-      //   transform: scale(1.2); /* Увеличиваем масштаб */
-      // }
-    }
+    width: 103%;
+    min-width: 360px;
+    min-height: 170px;
+    margin-right: 0;
   }
 
   &-woomen,
@@ -267,8 +255,99 @@
   &-title-accesories {
     position: absolute;
     text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &-title-heading {
+    margin-bottom: 5px;
   }
 }
+
+//   &-woomen,
+//   &-men {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-right: 30px;
+//     position: relative;
+//     // overflow: hidden;
+
+//     // &-image {
+//     //   max-width: 100%;
+//     //   transition: all 0.2s linear;
+//     //   display: block;
+
+//     // &:hover {
+//     //   transform: scale(1.2); /* Увеличиваем масштаб */
+//     // }
+//   }
+
+//   &-kids {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+//     // overflow: hidden;
+
+//     &-image {
+//       max-width: 100%;
+//       transition: all 0.2s linear;
+//       display: block;
+
+//       // &:hover {
+//       //   transform: scale(1.2); /* Увеличиваем масштаб */
+//       // }
+//     }
+//   }
+
+//   &-accesories {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 30px;
+//     position: relative;
+//     // overflow: hidden;
+
+//     &-image {
+//       max-width: 100%;
+//       transition: all 0.2s linear;
+//       display: block;
+
+//       // &:hover {
+//       //   transform: scale(1.2); /* Увеличиваем масштаб */
+//       // }
+//     }
+//   }
+// }
+
+// &-woomen,
+// &-men,
+// &-kids,
+// &-accesories {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(33, 22, 22, 0.7);
+//   }
+// }
+
+// &-title-woomen,
+// &-title-men,
+// &-title-kids,
+// &-title-accesories {
+//   position: absolute;
+//   text-align: center;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 19px;
+//   text-align: center;
+//   color: #ffffff;
+// }
 
 // Стилизация блока products
 
