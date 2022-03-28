@@ -43,12 +43,6 @@
                   </svg>
                 </label>
               </form>
-
-              <!-- <a href="#"
-                ><img
-                  src="./img/header_icon_search.svg"
-                  alt="Search-icon"
-              /></a> -->
             </div>
             <nav class="header-nav">
               <ul class="header-nav-list">
@@ -69,63 +63,159 @@
         </section>
       </header>
 
+      <aside class="header-breadcrumbs container">
+        <h3 class="header-breadcrumbs-title mark-color">New arrivals</h3>
+        <nav class="header-breadcrumbs-menu">
+          <ul class="header-breadcrumbs-menu-list">
+            <li class="header-breadcrumbs-menu-list-item">
+              <a
+                href="./index.html"
+                class="header-breadcrumbs-menu-list-item-link"
+                >Home</a
+              >
+            </li>
+            <li class="header-breadcrumbs-menu-list-item">
+              <a
+                href="./catalog.html"
+                class="header-breadcrumbs-menu-list-item-link"
+                >Men</a
+              >
+            </li>
+            <li class="header-breadcrumbs-menu-list-item">
+              <a
+                href="#"
+                class="header-breadcrumbs-menu-list-item-link mark-color"
+                >New arrivals</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
       <!-- Основная часть сайта -->
       <main id="main">
-        <!-- ПРОМО -->
-        <section class="poster">
-          <div class="poster-promo container">
-            <div class="poster-promo-text">
-              <h1 class="poster-promo-text-heading">The brand</h1>
-              <h2 class="poster-promo-text-nowrap">
-                of luxerious <span class="mark-color">fashion</span>
-              </h2>
-            </div>
-          </div>
-        </section>
-
-        <!-- Аксессуары -->
-        <section class="offer container">
-          <div class="offer-wrap">
-            <a href="#" class="offer-card offer-woomen">
-              <div class="offer-title-woomen">
-                <h5 class="offer-title-heading">30% off</h5>
-                <h3 class="mark-color">for women</h3>
-              </div>
-            </a>
-            <a href="#" class="offer-card offer-men">
-              <div class="offer-title-men">
-                <h5 class="offer-title-heading">hot deal</h5>
-                <h3 class="mark-color">for men</h3>
-              </div>
-            </a>
-            <a href="#" class="offer-card offer-kids">
-              <div class="offer-title-kids">
-                <h5 class="offer-title-heading" 5>new arrivals</h5>
-                <h3 class="mark-color">for kids</h3>
-              </div>
-            </a>
-          </div>
-
-          <a href="#" class="offer-accesories">
-            <div class="offer-title-accesories">
-              <h5 class="offer-title-heading">luxirous & trendy</h5>
-              <h3 class="mark-color">accesories</h3>
-            </div>
-          </a>
-        </section>
-
         <!-- Продукты -->
-        <section class="products container">
-          <h2 class="products-title">Fetured Items</h2>
-          <p class="products-text">
-            Shop for items based on what we featured in this week
-          </p>
+        <section class="product container">
+          <div class="product-sidebar container">
+            <div class="product-sidebar-filter">
+              <button class="product-sidebar-filter-btn">
+                <p class="product-sidebar-filter-btn-txt">Filter</p>
+                <svg
+                  width="15"
+                  height="10"
+                  viewBox="0 0 15 10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="product-sidebar-filter-btn-svg"
+                >
+                  <path
+                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="product-sidebar-options">
+              <details class="product-sidebar-options-details">
+                <summary class="product-sidebar-options-details-summary">
+                  Trending now
+                </summary>
+                <form
+                  class="product-sidebar-options-details-summary-form"
+                  action="#"
+                  method="get"
+                >
+                  <label
+                    class="product-sidebar-options-details-summary-form-label checkbox-hover trans"
+                    for="trend"
+                  >
+                    <input
+                      class="product-sidebar-options-details-summary-form-input"
+                      type="checkbox"
+                      value="trend"
+                      id="trend"
+                    />TREND</label
+                  >
+                </form>
+              </details>
+              <details class="product-sidebar-options-details">
+                <summary class="product-sidebar-options-details-summary">
+                  Size
+                </summary>
+                <form
+                  class="product-sidebar-options-details-summary-form"
+                  action="#"
+                  method="get"
+                >
+                  <label
+                    class="product-sidebar-options-details-summary-form-label checkbox-hover trans"
+                    for="xs"
+                    ><input
+                      class="product-sidebar-options-details-summary-form-label-input"
+                      type="checkbox"
+                      value="xs"
+                      id="xs"
+                    />XS</label
+                  >
+                  <label
+                    class="product-sidebar-options-details-summary-form-label checkbox-hover trans"
+                    for="s"
+                    ><input
+                      class="product-sidebar-options-details-summary-form-label-input"
+                      type="checkbox"
+                      value="s"
+                      id="s"
+                    />S</label
+                  >
+                  <label
+                    class="product-sidebar-options-details-summary-form-label checkbox-hover trans"
+                    for="m"
+                    ><input
+                      class="product-sidebar-options-details-summary-form-label-input"
+                      type="checkbox"
+                      value="m"
+                      id="m"
+                    />M</label
+                  >
+                  <label
+                    class="product-sidebar-options-details-summary-form-label checkbox-hover trans"
+                    for="l"
+                    ><input
+                      class="product-sidebar-options-details-summary-form-label-input"
+                      type="checkbox"
+                      value="l"
+                      id="l"
+                    />L</label
+                  >
+                </form>
+              </details>
+              <details class="product-sidebar-options-details">
+                <summary class="product-sidebar-options-details-summary mr-0">
+                  PRICE
+                </summary>
+                <form
+                  class="product-sidebar-options-details-summary-form right"
+                  action="#"
+                  method="get"
+                >
+                  <label
+                    class="product-sidebar-options-details-summary-form-label checkbox-hover trans"
+                    for="price"
+                    ><input
+                      class="product-sidebar-options-details-summary-form-label-input"
+                      type="checkbox"
+                      name="price"
+                      id="price"
+                    />$52.00</label
+                  >
+                </form>
+              </details>
+            </div>
+          </div>
 
           <div class="products-wrap">
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_1.png"
+                  src="./img/catalog/fetured_Items_1.png"
                   alt="image: products-card-1"
                   class="products-image"
                 />
@@ -142,7 +232,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_2.png"
+                  src="./img/catalog/fetured_Items_2.png"
                   alt="image: products-card-2"
                   class="products-image"
                 />
@@ -159,7 +249,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_3.png"
+                  src="./img/catalog/fetured_Items_3.png"
                   alt="image: products-card-3"
                   class="products-image"
                 />
@@ -178,7 +268,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_4.png"
+                  src="./img/catalog/fetured_Items_4.png"
                   alt="image: products-card-4"
                   class="products-image"
                 />
@@ -195,7 +285,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_5.png"
+                  src="./img/catalog/fetured_Items_5.png"
                   alt="image: products-card-5"
                   class="products-image"
                 />
@@ -212,7 +302,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_6.png"
+                  src="./img/catalog/fetured_Items_6.png"
                   alt="image: products-card-6"
                   class="products-image"
                 />
@@ -227,9 +317,114 @@
             </article>
           </div>
 
-          <a href="./catalog.html" class="products-button">
-            Browse All Product
-          </a>
+          <div class="products-wrap">
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/catalog/fetured_Items_7.png"
+                  alt="image: products-card-7"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/catalog/fetured_Items_8.png"
+                  alt="image: products-card-8"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+
+            <article class="products-card">
+              <a href="#">
+                <img
+                  src="./img/catalog/fetured_Items_9.png"
+                  alt="image: products-card-9"
+                  class="products-image"
+                />
+                <h3 class="products-card-title">Ellery x m'o capsule</h3>
+                <div class="products-card-description">
+                  Known for her sculptural takes on&nbsp;traditional tailoring,
+                  Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                  Moda Operandi.
+                </div>
+                <span class="products-card-price">$52.00</span>
+              </a>
+            </article>
+          </div>
+          <div class="product-pagination">
+            <ul class="product-pagination__list">
+              <li class="product-list">
+                <button class="product-list-link">
+                  <svg
+                    width="9"
+                    height="14"
+                    viewBox="0 0 9 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link product-current" href="#">1</a>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link" href="#">2</a>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link" href="#">3</a>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link" href="#">4</a>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link" href="#">5</a>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link" href="#">6</a>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link" href="#">...</a>
+              </li>
+              <li class="product-list">
+                <a class="product-list-link" href="#">20</a>
+              </li>
+              <li class="product-list">
+                <button class="product-list-link">
+                  <svg
+                    width="9"
+                    height="14"
+                    viewBox="0 0 9 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <!-- Характерная черта -->

@@ -636,3 +636,122 @@
 .icon-twitter {
   background: url(../img/icon-twitter.svg) center no-repeat;
 }
+
+// Стилизация catalog.html
+.header-breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  background: #f8f3f4;
+
+  &-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 60px;
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+
+    &-list {
+      display: flex;
+
+      &::after:last-child {
+        content: "";
+        margin: 0;
+      }
+
+      &-item::after {
+        content: "/";
+        margin: 0 2px;
+      }
+    }
+  }
+}
+
+.product-sidebar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 65px;
+
+  &-filter {
+    &-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border: none;
+      background-color: transparent;
+
+      &:hover {
+        color: #f16d7f;
+        fill: #f16d7f;
+        cursor: pointer;
+      }
+
+      &-txt {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-options {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    &-details {
+      padding-right: 48px;
+      cursor: pointer;
+    }
+  }
+}
+
+.product-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 96px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 261px;
+    margin: 0 auto;
+  }
+
+  .product-list-link {
+    color: #6f6e6e;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: #ef5b70;
+      fill: #ef5b70;
+      text-decoration: none;
+    }
+  }
+}
+
+.product-current {
+  color: #ef5b70;
+}
