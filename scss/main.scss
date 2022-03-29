@@ -454,6 +454,11 @@
   fill: #000;
 }
 
+.products-card:hover .products-card-btn:hover svg {
+  background-color: transparent;
+  fill: #000;
+}
+
 .products-card:hover .products-card-btn:active {
   background-color: transparent;
   color: #fff;
@@ -498,6 +503,16 @@
 .products-btn:active {
   background-color: #fff;
   color: #ff6a6a;
+}
+
+// Стилизация выпадающего списка фильтра
+.product-sidebar-filter-info {
+  display: none;
+  padding-bottom: 13px;
+}
+
+.product-sidebar-filter:active .product-sidebar-filter-info {
+  display: flex;
 }
 
 // Стилизация блока feature
