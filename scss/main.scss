@@ -691,7 +691,6 @@
       background-color: transparent;
 
       &:hover {
-        color: #f16d7f;
         fill: #f16d7f;
         cursor: pointer;
       }
@@ -703,6 +702,10 @@
         line-height: 17px;
         color: #000000;
         margin-right: 10px;
+
+        &:hover {
+          color: #f16d7f;
+        }
       }
     }
   }
@@ -715,6 +718,50 @@
     &-details {
       padding-right: 48px;
       cursor: pointer;
+
+      &-summary {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-right: 28px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+
+        &-svg {
+          margin-left: 10px;
+        }
+
+        &-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          background: #ffffff;
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          padding: 9px;
+        }
+
+        &-form-label {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #6f6e6e;
+          padding-top: 10px;
+
+          &:hover {
+            color: #f16d7f;
+            cursor: pointer;
+            text-transform: uppercase;
+          }
+
+          &-input {
+            border: 1px solid #ebebeb;
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
 }
