@@ -383,6 +383,7 @@
 
   &-card {
     text-align: start;
+    position: relative;
 
     &-title {
       color: #000000;
@@ -439,6 +440,64 @@
       transition: all 0.2s linear;
     }
   }
+}
+
+// Стилизация наведения мыши на карточку товара
+.products-card:hover .products-card-btn {
+  display: flex;
+}
+
+.products-card:hover .products-card-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #000;
+  fill: #000;
+}
+
+.products-card:hover .products-card-btn:active {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.products-card:hover .products-card-btn:active svg {
+  fill: #fff;
+}
+
+.products-card:hover .products-image {
+  filter: brightness(50%);
+}
+
+.products-card-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 38.3%;
+  min-height: 43px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  position: absolute;
+  top: 188px;
+  left: 32.7%;
+}
+
+.products-card-btn svg {
+  fill: #fff;
+  margin: 0 11px 0 0;
+}
+
+.products-btn:hover {
+  background-color: #ff6a6a;
+  color: #fff;
+}
+
+.products-btn:active {
+  background-color: #fff;
+  color: #ff6a6a;
 }
 
 // Стилизация блока feature
@@ -663,6 +722,10 @@
     &-list {
       display: flex;
 
+      &:hover {
+        color: #f16d7f;
+      }
+
       &::after:last-child {
         content: "";
         margin: 0;
@@ -714,6 +777,7 @@
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+    margin-right: 255px;
 
     &-details {
       padding-right: 48px;
