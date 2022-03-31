@@ -7,7 +7,7 @@
   padding-right: 15px;
 }
 
-#header {
+.header {
   background: #222222;
 }
 
@@ -117,6 +117,17 @@
   padding-right: 33px;
 }
 
+.header-nav-item-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav-item-btn:hover ~ .header-nav-item-btn-svg {
+  border: 2px solid red;
+  fill: #f16d7f;
+}
+
 .poster {
   background-color: #f1e4e6;
 }
@@ -125,7 +136,7 @@
   width: 100%;
   margin-bottom: 65px;
   min-height: 764px;
-  background-image: url("../img/header_img!.png");
+  background-image: url("../img/header_img.png");
   background-repeat: no-repeat;
   background-position: -4%;
   display: -webkit-box;
@@ -140,11 +151,7 @@
 }
 
 .poster-promo-text {
-  margin-right: 85px;
   margin-bottom: 100px;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 58px;
   color: #222222;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -159,10 +166,18 @@
 }
 
 .poster-promo-text-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #222222;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 48px;
   line-height: 58px;
+  margin-right: 62px;
   text-transform: uppercase;
 }
 
@@ -273,7 +288,11 @@
 }
 
 .offer-title-heading {
+  display: block;
   margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .products {
@@ -511,7 +530,7 @@
   margin-bottom: 28px;
 }
 
-#footer {
+.footer {
   background: #222224;
 }
 
@@ -595,11 +614,15 @@
   /* or 40px */
 }
 
-.footer-review-subscribe > h4 {
+.footer-review-subscribe-txt {
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 167.2%;
-  margin-bottom: 32px;
+}
+
+.footer-review-subscribe-form {
+  margin-top: 32px;
 }
 
 .footer-review-subscribe-form-input {
@@ -856,6 +879,7 @@
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   padding: 9px;
+  z-index: 1;
 }
 
 .product-sidebar-options-details-summary-form-label {

@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+/*Убрать горизонтальный скролл*/
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /*Избавляемся от несоответствий отображения элементов верстки в разных браузерах */
 .clearfix:before,
 .clearfix:after {
@@ -74,7 +81,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#wrap {
+.wrap {
   margin: 0;
   height: 100vh;
   display: -webkit-box;
@@ -86,13 +93,13 @@ a:hover {
           flex-direction: column;
 }
 
-#main {
+.main {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
 }
 
-#footer {
+.footer {
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }

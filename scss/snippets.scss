@@ -16,6 +16,13 @@
   box-sizing: border-box;
 }
 
+/*Убрать горизонтальный скролл*/
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /*Избавляемся от несоответствий отображения элементов верстки в разных браузерах */
 .clearfix:before,
 .clearfix:after {
@@ -83,17 +90,17 @@ a {
 }
 
 // Липкий футер
-#wrap {
+.wrap {
   margin: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-#main {
+.main {
   flex: auto;
 }
 
-#footer {
+.footer {
   flex-shrink: 1;
 }

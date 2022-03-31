@@ -15,10 +15,10 @@
   </head>
   <body>
     <!-- Обертка для липкого футера-->
-    <div id="wrap">
+    <div class="wrap">
       <!-- Header сайта -->
-      <header id="header">
-        <section class="page-header container">
+      <header class="header">
+        <div class="page-header container">
           <div class="header-menu">
             <div class="header-menu-logo">
               <a href="#"><img src="./img/header_logo.svg" alt="Logo" /></a>
@@ -53,7 +53,20 @@
             <nav class="header-nav">
               <ul class="header-nav-list">
                 <li class="header-nav-item">
-                  <a href="#"><img src="./img/nav_menu.svg" alt="Menu" /></a>
+                  <button class="header-nav-item-btn">
+                    <svg
+                      width="32"
+                      height="23"
+                      viewBox="0 0 32 23"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="header-nav-item-btn-svg"
+                    >
+                      <path
+                        d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
+                        fill="#E5E5E5"
+                      />
+                    </svg>
+                  </button>
                 </li>
                 <li class="header-nav-item">
                   <a href="#"><img src="./img/nav_user.svg" alt="User" /></a>
@@ -66,19 +79,21 @@
               </ul>
             </nav>
           </div>
-        </section>
+        </div>
       </header>
 
       <!-- Основная часть сайта -->
-      <main id="main">
+      <main class="main">
         <!-- ПРОМО -->
         <section class="poster">
           <div class="poster-promo container">
             <div class="poster-promo-text">
-              <h1 class="poster-promo-text-heading">The brand</h1>
-              <h2 class="poster-promo-text-nowrap">
-                of luxerious <span class="mark-color">fashion</span>
-              </h2>
+              <h1 class="poster-promo-text-heading">
+                The brand
+                <span class="poster-promo-text-nowrap">
+                  of luxerious <span class="mark-color">fashion</span>
+                </span>
+              </h1>
             </div>
           </div>
         </section>
@@ -88,19 +103,19 @@
           <div class="offer-wrap">
             <a href="#" class="offer-card offer-woomen">
               <div class="offer-title-woomen">
-                <h5 class="offer-title-heading">30% off</h5>
+                <b class="offer-title-heading">30% off</b>
                 <h3 class="mark-color">for women</h3>
               </div>
             </a>
             <a href="#" class="offer-card offer-men">
               <div class="offer-title-men">
-                <h5 class="offer-title-heading">hot deal</h5>
+                <b class="offer-title-heading">hot deal</b>
                 <h3 class="mark-color">for men</h3>
               </div>
             </a>
             <a href="#" class="offer-card offer-kids">
               <div class="offer-title-kids">
-                <h5 class="offer-title-heading" 5>new arrivals</h5>
+                <h5 class="offer-title-heading">new arrivals</h5>
                 <h3 class="mark-color">for kids</h3>
               </div>
             </a>
@@ -108,7 +123,7 @@
 
           <a href="#" class="offer-accesories">
             <div class="offer-title-accesories">
-              <h5 class="offer-title-heading">luxirous & trendy</h5>
+              <b class="offer-title-heading">luxirous & trendy</b>
               <h3 class="mark-color">accesories</h3>
             </div>
           </a>
@@ -125,7 +140,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_1.png"
+                  src="./img/fetured_items_1.png"
                   alt="image: products-card-1"
                   class="products-image"
                 />
@@ -142,7 +157,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_2.png"
+                  src="./img/fetured_items_2.png"
                   alt="image: products-card-2"
                   class="products-image"
                 />
@@ -159,7 +174,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_3.png"
+                  src="./img/fetured_items_3.png"
                   alt="image: products-card-3"
                   class="products-image"
                 />
@@ -178,7 +193,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_4.png"
+                  src="./img/fetured_items_4.png"
                   alt="image: products-card-4"
                   class="products-image"
                 />
@@ -195,7 +210,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_5.png"
+                  src="./img/fetured_items_5.png"
                   alt="image: products-card-5"
                   class="products-image"
                 />
@@ -212,7 +227,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/fetured_Items_6.png"
+                  src="./img/fetured_items_6.png"
                   alt="image: products-card-6"
                   class="products-image"
                 />
@@ -272,12 +287,11 @@
               </p>
             </div>
           </div>
-          -->
         </section>
       </main>
 
       <!-- Footer сайта -->
-      <footer id="footer">
+      <footer class="footer">
         <!-- Отзывы и регистрация -->
         <section class="footer-review">
           <div class="footer-review-info container">
@@ -298,7 +312,9 @@
 
             <div class="footer-review-subscribe">
               <h2>subscribe</h2>
-              <h4>for our newletter and promotion</h4>
+              <p class="footer-review-subscribe-txt">
+                for our newletter and promotion
+              </p>
               <form class="footer-review-subscribe-form">
                 <input
                   type="email"
