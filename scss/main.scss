@@ -754,18 +754,13 @@
     &-list {
       display: flex;
 
-      &:hover {
-        color: #f16d7f;
-      }
-
-      &::after:last-child {
-        content: "";
-        margin: 0;
-      }
-
-      &-item::after {
+      &-item:not(:last-child)::after {
         content: "/";
         margin: 0 2px;
+      }
+
+      &-item-link:hover {
+        color: #f16d7f;
       }
     }
   }
@@ -802,6 +797,14 @@
           color: #f16d7f;
         }
       }
+    }
+
+    &-info {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: white;
+      padding: 22px;
     }
   }
 
