@@ -94,148 +94,212 @@
       <!-- Основная часть сайта -->
 
       <main class="main">
+        <!-- Превью одежды -->
+        <section class="product-preview">
+          <article class="product-preview-carousel">
+            <button class="carousel-btn prew-btn">
+              <svg
+                class="carousel-arrow"
+                width="13"
+                height="23"
+                viewBox="0 0 13 23"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z"
+                />
+              </svg>
+            </button>
+
+            <img src="./img/product/product-preview-1.png" alt="" />
+            <button class="carousel-btn next-btn">
+              <svg
+                class="carousel-arrow"
+                width="13"
+                height="23"
+                viewBox="0 0 13 23"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z"
+                />
+              </svg>
+            </button>
+          </article>
+
+          <article class="product-preview-description container">
+            <h2 class="product-description-title">Women collection</h2>
+            <h3 class="product-description-heading">Moschino cheap and chic</h3>
+            <p class="product-description-txt">
+              Compellingly actualize fully researched processes before proactive
+              outsourcing. Progressively syndicate collaborative architectures
+              before cutting-edge services. Completely visualize parallel core
+              competencies rather than exceptional portals.
+            </p>
+            <h5 class="product-description-price">$561</h5>
+
+            <div class="product-sidebar">
+              <div class="product-sidebar-options">
+                <details class="product-sidebar-options-details">
+                  <summary class="product-sidebar-options-details-summary">
+                    Trending now
+                    <svg
+                      width="11"
+                      height="6"
+                      viewBox="0 0 11 6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="product-sidebar-options-details-summary-svg"
+                    >
+                      <path
+                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                        fill="#6F6E6E"
+                      />
+                    </svg>
+                  </summary>
+                  <form
+                    class="product-sidebar-options-details-summary-form"
+                    action="#"
+                    method="get"
+                  >
+                    <label
+                      class="product-sidebar-options-details-summary-form-label"
+                      for="trend"
+                    >
+                      <input
+                        class="product-sidebar-options-details-summary-form-label-input"
+                        type="checkbox"
+                        value="trend"
+                        id="trend"
+                      />Trend</label
+                    >
+                  </form>
+                </details>
+                <details class="product-sidebar-options-details">
+                  <summary class="product-sidebar-options-details-summary">
+                    Size
+                    <svg
+                      width="11"
+                      height="6"
+                      viewBox="0 0 11 6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="product-sidebar-options-details-summary-svg"
+                    >
+                      <path
+                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z "
+                        fill="#6F6E6E"
+                      />
+                    </svg>
+                  </summary>
+                  <form
+                    class="product-sidebar-options-details-summary-form"
+                    action="#"
+                    method="get"
+                  >
+                    <label
+                      class="product-sidebar-options-details-summary-form-label"
+                      for="xs"
+                      ><input
+                        class="product-sidebar-options-details-summary-form-label-input"
+                        type="checkbox"
+                        value="xs"
+                        id="xs"
+                      />XS</label
+                    >
+                    <label
+                      class="product-sidebar-options-details-summary-form-label"
+                      for="s"
+                      ><input
+                        class="product-sidebar-options-details-summary-form-label-input"
+                        type="checkbox"
+                        value="s"
+                        id="s"
+                      />S</label
+                    >
+                    <label
+                      class="product-sidebar-options-details-summary-form-label"
+                      for="m"
+                      ><input
+                        class="product-sidebar-options-details-summary-form-label-input"
+                        type="checkbox"
+                        value="m"
+                        id="m"
+                      />M</label
+                    >
+                    <label
+                      class="product-sidebar-options-details-summary-form-label"
+                      for="l"
+                      ><input
+                        class="product-sidebar-options-details-summary-form-label-input"
+                        type="checkbox"
+                        value="l"
+                        id="l"
+                      />L</label
+                    >
+                  </form>
+                </details>
+                <details class="product-sidebar-options-details">
+                  <summary class="product-sidebar-options-details-summary mr-0">
+                    Price
+                    <svg
+                      width="11"
+                      height="6"
+                      viewBox="0 0 11 6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="product-sidebar-options-details-summary-svg"
+                    >
+                      <path
+                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                        fill="#6F6E6E"
+                      />
+                    </svg>
+                  </summary>
+                  <form
+                    class="product-sidebar-options-details-summary-form right"
+                    action="#"
+                    method="get"
+                  >
+                    <label
+                      class="product-sidebar-options-details-summary-form-label"
+                      for="price"
+                      ><input
+                        class="product-sidebar-options-details-summary-form-label-input"
+                        type="checkbox"
+                        name="price"
+                        id="price"
+                      />$52.00</label
+                    >
+                  </form>
+                </details>
+              </div>
+            </div>
+            <button class="product-sort__button button-hover trans">
+              <svg
+                class="product-sort__button-svg button-icon trans"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="24"
+                viewBox="0 0 26 24"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M0 .978C0 .44.433-.001.96-.001H4.44c.432 0 .817.294.93.718l3.926 14.445h10.707l3.558-8.315h-11.86a.973.973 0 0 1-.962-.978c0-.538.432-.978.961-.978h13.336a.95.95 0 0 1 .801.44c.177.277.209.62.08.93l-4.391 10.27a.963.963 0 0 1-.882.588H8.574a.964.964 0 0 1-.929-.717L3.718 1.956H.961A.973.973 0 0 1 0 .977zM5.48 21.782c0-1.223.978-2.217 2.18-2.217 1.202 0 2.18.995 2.18 2.217 0 1.223-.978 2.217-2.18 2.217-1.202 0-2.18-.994-2.18-2.217zm13.64.147c-.08-1.207.818-2.283 2.02-2.364 1.202-.082 2.244.847 2.324 2.054.032.603-.144 1.174-.529 1.614a2.162 2.162 0 0 1-1.49.766h-.16c-1.139 0-2.084-.913-2.165-2.07z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              Add to Cart
+            </button>
+          </article>
+        </section>
+
         <!-- Продукты -->
         <section class="product container">
-          <div class="product-sidebar container">
-            <div class="product-sidebar-options">
-              <details class="product-sidebar-options-details">
-                <summary class="product-sidebar-options-details-summary">
-                  Trending now
-                  <svg
-                    width="11"
-                    height="6"
-                    viewBox="0 0 11 6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="product-sidebar-options-details-summary-svg"
-                  >
-                    <path
-                      d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
-                      fill="#6F6E6E"
-                    />
-                  </svg>
-                </summary>
-                <form
-                  class="product-sidebar-options-details-summary-form"
-                  action="#"
-                  method="get"
-                >
-                  <label
-                    class="product-sidebar-options-details-summary-form-label"
-                    for="trend"
-                  >
-                    <input
-                      class="product-sidebar-options-details-summary-form-label-input"
-                      type="checkbox"
-                      value="trend"
-                      id="trend"
-                    />Trend</label
-                  >
-                </form>
-              </details>
-              <details class="product-sidebar-options-details">
-                <summary class="product-sidebar-options-details-summary">
-                  Size
-                  <svg
-                    width="11"
-                    height="6"
-                    viewBox="0 0 11 6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="product-sidebar-options-details-summary-svg"
-                  >
-                    <path
-                      d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z "
-                      fill="#6F6E6E"
-                    />
-                  </svg>
-                </summary>
-                <form
-                  class="product-sidebar-options-details-summary-form"
-                  action="#"
-                  method="get"
-                >
-                  <label
-                    class="product-sidebar-options-details-summary-form-label"
-                    for="xs"
-                    ><input
-                      class="product-sidebar-options-details-summary-form-label-input"
-                      type="checkbox"
-                      value="xs"
-                      id="xs"
-                    />XS</label
-                  >
-                  <label
-                    class="product-sidebar-options-details-summary-form-label"
-                    for="s"
-                    ><input
-                      class="product-sidebar-options-details-summary-form-label-input"
-                      type="checkbox"
-                      value="s"
-                      id="s"
-                    />S</label
-                  >
-                  <label
-                    class="product-sidebar-options-details-summary-form-label"
-                    for="m"
-                    ><input
-                      class="product-sidebar-options-details-summary-form-label-input"
-                      type="checkbox"
-                      value="m"
-                      id="m"
-                    />M</label
-                  >
-                  <label
-                    class="product-sidebar-options-details-summary-form-label"
-                    for="l"
-                    ><input
-                      class="product-sidebar-options-details-summary-form-label-input"
-                      type="checkbox"
-                      value="l"
-                      id="l"
-                    />L</label
-                  >
-                </form>
-              </details>
-              <details class="product-sidebar-options-details">
-                <summary class="product-sidebar-options-details-summary mr-0">
-                  Price
-                  <svg
-                    width="11"
-                    height="6"
-                    viewBox="0 0 11 6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="product-sidebar-options-details-summary-svg"
-                  >
-                    <path
-                      d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
-                      fill="#6F6E6E"
-                    />
-                  </svg>
-                </summary>
-                <form
-                  class="product-sidebar-options-details-summary-form right"
-                  action="#"
-                  method="get"
-                >
-                  <label
-                    class="product-sidebar-options-details-summary-form-label"
-                    for="price"
-                    ><input
-                      class="product-sidebar-options-details-summary-form-label-input"
-                      type="checkbox"
-                      name="price"
-                      id="price"
-                    />$52.00</label
-                  >
-                </form>
-              </details>
-            </div>
-          </div>
-
           <div class="products-wrap">
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/catalog/fetured_items_1.png"
+                  src="./img/product/product-1.png"
                   alt="image: products-card-1"
                   class="products-image"
                 />
@@ -265,7 +329,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/catalog/fetured_items_2.png"
+                  src="./img/product/product-2.png"
                   alt="image: products-card-2"
                   class="products-image"
                 />
@@ -295,7 +359,7 @@
             <article class="products-card">
               <a href="#">
                 <img
-                  src="./img/catalog/fetured_items_3.png"
+                  src="./img/product/product-3.png"
                   alt="image: products-card-3"
                   class="products-image"
                 />
