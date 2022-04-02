@@ -1016,3 +1016,130 @@
   margin-right: 0;
   padding-left: 80px;
 }
+
+// Стилизация shopping.html
+.shopping {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &-cart {
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 17px 19px 24px 1px rgba(0, 0, 0, 0.13);
+    margin-bottom: 40px;
+    max-width: 652px;
+    max-height: 306px;
+
+    &-link {
+      margin-right: 32px;
+    }
+
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      height: 306px;
+    }
+
+    &-info {
+      margin-right: 85px;
+
+      &-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        margin-bottom: 42px;
+        margin-top: 22px;
+        text-transform: uppercase;
+      }
+
+      &-txt {
+        font-weight: 400;
+        text-transform: capitalize;
+        font-size: 22px;
+        line-height: 27px;
+        color: #575757;
+        margin-top: 6px;
+
+        &:last-child {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 72px;
+    margin-bottom: 128px;
+
+    &-btn-txt {
+      border: 1px solid #a4a4a4;
+      padding: 16px 20px;
+      background-color: transparent;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+  }
+}
+
+.quantity-cart {
+  display: inline-block;
+  border: none;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: capitalize;
+  line-height: 27px;
+  color: #656565;
+  text-align: center;
+  width: 43px;
+  height: 24px;
+}
+
+.quantity-txt {
+  display: inline-block;
+}
+
+.close-btn {
+  margin-top: 22px;
+  margin-right: 22px;
+  border: none;
+  height: 18px;
+
+  // &:hover {
+  //   fill: #f16d7f;
+  // }
+  &-svg {
+    &:hover {
+      cursor: pointer;
+      fill: #f16d7f;
+    }
+  }
+}
+
+.clear-btn,
+.continue-btn {
+  border: 1px solid #a4a4a4;
+  padding: 16px 20px;
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    background: #f16d7f;
+    color: #ffffff;
+    fill: #ffffff;
+  }
+}
