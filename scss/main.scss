@@ -817,6 +817,7 @@
     &-details {
       padding-right: 48px;
       cursor: pointer;
+      position: relative;
 
       &-summary {
         display: flex;
@@ -979,5 +980,39 @@
     line-height: 29px;
     color: #ef5b70;
     text-transform: uppercase;
+    margin: 0;
   }
+}
+
+.product-sort__button {
+  margin: 49px auto 0;
+  border: 1px solid #f16d7f;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 46px;
+  color: #f16d7f;
+  transition: all 0.1s linear;
+}
+
+.product-sort__button-svg {
+  margin-right: 23px;
+  fill: currentColor;
+}
+
+.product-sort__button:hover {
+  cursor: pointer;
+  background: #f16d7f;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.prod-prev {
+  margin-top: 130px;
+  margin-right: 0;
+  padding-left: 80px;
 }
