@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/header_logo.svg"
+      type="image/x-icon"
+    />
+    <title>The brand of luxerious fashion</title>
+  </head>
+  <body>
+    <!-- Обертка для липкого футера-->
+
+    <r class="wrap">
+      <!-- Header сайта -->
+      <header class="header">
+        <div class="page-header container">
+          <div class="header-menu">
+            <div class="header-menu-logo">
+              <a href="./index.html"
+                ><img src="./img/header_logo.svg" alt="Logo"
+              /></a>
+
+              <form action="search" class="search-icon-form">
+                <input
+                  class="search-icon-form__input"
+                  id="search"
+                  type="search"
+                />
+                <label for="search" class="search-icon-form__label">
+                  <svg
+                    class="search-icon-form__svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z"
+                    />
+                  </svg>
+                </label>
+              </form>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#"><img src="./img/nav_menu.svg" alt="Menu" /></a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="./registration.html"
+                    ><img src="./img/nav_user.svg" alt="User"
+                  /></a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="./shopping.html"
+                    ><img src="./img/nav_basket.svg" alt="Basket"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <aside class="header-breadcrumbs container">
+        <h3 class="header-breadcrumbs-title mark-color">Registration</h3>
+      </aside>
+
+      <!-- Основная часть сайта -->
+
+      <main class="main">
+        <!-- Превью одежды -->
+        <section class="registration-info container">
+          <form class="registration-form">
+            <h5 class="registration-name">Your Name</h5>
+            <input
+              class="registration-input"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              class="registration-input"
+              type="text"
+              placeholder="Last Name"
+            />
+            <div class="registration-sex-checked">
+              <label class="registration-form-label">
+                <input class="registration-form-label-input" type="radio" name="gender" checked="" value="male">Male
+            </label>
+            <label class="registration-form-label">
+                <input class="registration-form-label-input" type="radio" name="gender" checked="" value="female">Female
+            </label>
+            </div>
+
+            <h5 class="registration-name">Login details</h5>
+            <input
+              class="registration-input"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              class="registration-input"
+              type="text"
+              placeholder="Password"
+            />
+            <p class="registration-form-txt">Please use 8 or more characters, with 
+              at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <button class="registration-btn" type="submit">
+                Join now
+                <svg class="registration-btn-svg" width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
+                </svg>
+            </button>
+          </form>
+          <article class="registration-perk">
+            <h3 class="registration-perk-title">Loyalty has its perks</h3>
+            <p class="registration-perk-txt">
+              Get in on the loyalty program where you can earn points and unlock
+              serious perks. Starting with these as soon as you join:
+            </p>
+            <ul class="registration-perk-list">
+                 <li class="registration-perk-item">
+                    <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg> 
+                    15% off welcome offer
+                </li>
+                <li class="registration-perk-item">
+                    <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    Free shipping, returns and exchanges on all orders
+                </li>
+                <li class="registration-perk-item">
+                    <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    $10 off a purchase on your birthday
+                </li>
+                <li class="registration-perk-item">
+                    <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    Early access to products
+                </li>
+                <li class="registration-perk-item">
+                    <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black"/>
+                    </svg>
+                    Exclusive offers & rewards
+                </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <!-- Footer сайта -->
+      <footer class="footer">
+        <!-- Отзывы и регистрация -->
+        <section class="footer-review">
+          <div class="footer-review-info container">
+            <article class="footer-review-info-comment">
+              <img
+                src="./img/form_photo.png"
+                alt=""
+                class="footer-review-info-comment-userpic"
+              />
+              <p class="footer-review-info-comment-text">
+                &#8220;Vestibulum quis porttitor dui! Quisque<wbr /> viverra
+                nunc&nbsp;mi,
+                <span class="footer-review-info-comment-text-mark"
+                  >a&nbsp;pulvinar purus <wbr /> condimentum</span
+                >&#8221;
+              </p>
+            </article>
+
+            <div class="footer-review-subscribe">
+              <h2>subscribe</h2>
+              <h4>for our newletter and promotion</h4>
+              <form class="footer-review-subscribe-form">
+                <input
+                  type="email"
+                  class="footer-review-subscribe-form-input"
+                  placeholder="Enter Your Email"
+                  aria-label="Enter Your Email"
+                  aria-describedby="button-submit"
+                />
+                <button
+                  class="footer-review-subscribe-form-btn"
+                  type="submit"
+                  id="button-submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- Права и Соиальные сети -->
+        <section class="footer-info container">
+          <div class="footer-info-rights">
+            &copy; 2021 Brand All Rights Reserved.
+          </div>
+          <div class="footer-info-social">
+            <ul class="footer-info-social-list">
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://www.facebook.com/geekbrains.ru"
+                  class="footer-info-social-list-item-link icon-facebook"
+                ></a>
+              </li>
+
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://www.instagram.com/geekbrains.ru/"
+                  class="footer-info-social-list-item-link icon-instagram"
+                ></a>
+              </li>
+
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://www.pinterest.ru/geekbrainsdesignhistory/"
+                  class="footer-info-social-list-item-link icon-pinterest"
+                ></a>
+              </li>
+
+              <li class="footer-info-social-list-item">
+                <a
+                  href="https://twitter.com/geekbrains__ru"
+                  class="footer-info-social-list-item-link icon-twitter"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

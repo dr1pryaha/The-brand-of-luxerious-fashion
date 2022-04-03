@@ -739,7 +739,8 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   &-menu {
@@ -1008,7 +1009,6 @@
   cursor: pointer;
   background: #f16d7f;
   color: #ffffff;
-  fill: #ffffff;
 }
 
 .prod-prev {
@@ -1266,5 +1266,117 @@
       width: 43px;
       height: 24px;
     }
+  }
+}
+
+// Стилизация registration.html
+.registration {
+  &-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 32%;
+    margin-right: 128px;
+
+    &-txt {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+      margin-bottom: 39px;
+      margin-top: 15px;
+    }
+  }
+
+  &-perk {
+    max-width: 652px;
+    flex: 0 0 60%;
+
+    &-title {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 22px;
+      text-transform: uppercase;
+    }
+
+    &-txt {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 22px;
+    }
+
+    &-item {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      padding-bottom: 16px;
+    }
+  }
+
+  &-name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin: 0;
+  }
+
+  &-input {
+    width: 100%;
+    max-width: 360px;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 13px;
+    line-height: 16px;
+    border: 1px solid #a4a4a4;
+    padding: 13px 0 16px 17px;
+    margin-top: 20px;
+  }
+
+  &-form-label {
+    display: inline-block;
+    margin-top: 33px;
+    padding-right: 20px;
+    margin-bottom: 33px;
+
+    &-input {
+      margin-right: 10px;
+    }
+  }
+
+  &-btn {
+    display: inline-block;
+    border: 1px solid #f16d7f;
+    background: #f16d7f;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 17px;
+    max-width: 168px;
+    color: #ffffff;
+    padding: 16px 26px 17px 29px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      background: #ffffff;
+      color: #f16d7f;
+    }
+  }
+
+  &-btn-svg {
+    margin-left: 20px;
+    fill: currentColor;
   }
 }
