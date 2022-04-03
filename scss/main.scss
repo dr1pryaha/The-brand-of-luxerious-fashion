@@ -1321,6 +1321,10 @@
       line-height: 29px;
       color: #000000;
       padding-bottom: 16px;
+
+      & > svg {
+        margin-right: 23px;
+      }
     }
   }
 

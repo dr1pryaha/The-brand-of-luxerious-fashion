@@ -1414,6 +1414,10 @@
   padding-bottom: 16px;
 }
 
+.registration-perk-item > svg {
+  margin-right: 23px;
+}
+
 .registration-name {
   font-weight: 300;
   font-size: 16px;
