@@ -1219,4 +1219,132 @@
   color: #ffffff;
   fill: #ffffff;
 }
+
+.shopping-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 18px;
+  margin-left: 25px;
+  margin-bottom: 335px;
+}
+
+.delivery-address {
+  width: 100%;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 16px;
+  border: 1px solid #a4a4a4;
+  padding: 13px 0 16px 17px;
+  margin-top: 20px;
+}
+
+.delivery-title {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: #222222;
+  margin: 0;
+}
+
+.delivery-btn {
+  display: block;
+  border: 1px solid #a4a4a4;
+  margin-top: 23px;
+  padding: 11px 12px 11px 12px;
+  background: #ffffff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.delivery-btn:hover {
+  cursor: pointer;
+  background: #f16d7f;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.shopping-form-cost {
+  margin-top: 57px;
+  padding: 40px 42px 40px 43px;
+  text-align: right;
+}
+
+.cost-btn {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #f16d7f;
+  background: #f16d7f;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 14px;
+  margin-top: 17px;
+}
+
+.cost-btn:hover {
+  background: #ffffff;
+  color: #f16d7f;
+}
+
+.cost-total {
+  display: inline-block;
+  text-align: right;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 13px;
+  color: #4a4a4a;
+  margin-bottom: 12px;
+}
+
+.cost-total-value {
+  display: inline-block;
+  border: none;
+  text-align: left;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  width: 43px;
+  height: 24px;
+  color: #4a4a4a;
+}
+
+.cost-grand {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 19px;
+}
+
+.cost-grand-value {
+  display: inline-block;
+  border: none;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+  text-align: center;
+  width: 43px;
+  height: 24px;
+}
 /*# sourceMappingURL=main.css.map */

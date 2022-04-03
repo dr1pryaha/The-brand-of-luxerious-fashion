@@ -152,7 +152,33 @@
             </div>
           </div>
 
-          <form action="" class="shopping-address"></form>
+          <form action="" class="shopping-form">
+            <div class="shopping-form-delivery">
+              <h5 class="delivery-title">Shipping address</h5>
+              <input
+                class="delivery-address"
+                type="text"
+                placeholder="Bangladesh"
+              />
+              <input class="delivery-address" type="text" placeholder="State" />
+              <input
+                class="delivery-address"
+                type="text"
+                placeholder="Postcode / Zip"
+              />
+              <button class="delivery-btn" type="submit">Get a quote</button>
+            </div>
+            <div class="shopping-form-cost">
+              <p class="cost-total">Sub total</p>
+              <input type="text" class="cost-total-value" value="$900" />
+              <br />
+              <p class="cost-grand">Grand total</p>
+              <input type="text" class="cost-grand-value" value="$900" />
+              <button class="cost-btn" type="submit">
+                Proceed to checkout
+              </button>
+            </div>
+          </form>
         </section>
       </main>
 
