@@ -57,6 +57,7 @@
 }
 
 .search-icon-form__label:hover .search-icon-form__svg {
+  cursor: pointer;
   fill: #f16d7f;
 }
 
@@ -120,12 +121,118 @@
   &-item-btn {
     background: transparent;
     border: none;
-    cursor: pointer;
 
-    &:hover ~ .header-nav-item-btn-svg {
-      border: 2px solid red;
-      fill: #f16d7f;
+    &-svg {
+      fill: #e5e5e5;
+
+      &:hover {
+        cursor: pointer;
+        fill: #f16d7f;
+      }
     }
+  }
+}
+
+// Стилизация выпадающего меню
+.menu-btn-close {
+  text-align: right;
+  padding: 16px 16px 8px;
+}
+
+// .btn-close:checked ~ .menu {
+//   /* display: block; */
+//   visibility: hidden;
+//   /* height: auto; */
+// }
+
+.btn-close-svg {
+  fill: #575757;
+
+  &:hover {
+    fill: #f16d7f;
+    cursor: pointer;
+  }
+}
+
+.menu-btn,
+.btn-close {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu {
+  max-width: 232px;
+  width: 100%;
+  background-color: #fff;
+  visibility: hidden;
+  height: 764px;
+  background-color: #fff;
+  list-style: none;
+  position: absolute;
+  top: 71px;
+  right: 0;
+  z-index: 20;
+  transition: width 1s ease;
+
+  &-list,
+  &-sublist {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &-list {
+    padding: 37px 34px;
+
+    &-item {
+      padding-left: 33px;
+      margin: 0 0 20px 0;
+
+      &:first-child {
+        margin: 0 0 24px 0;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+      }
+
+      & > a {
+        display: block;
+        margin: 0 0 12px 0;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f16d7f;
+      }
+    }
+  }
+}
+
+.menu-list-item > a:active {
+  text-decoration: none;
+  color: #6f6e6e;
+}
+
+.menu-sublist {
+  padding: 0 0 0 20px;
+
+  &-item a {
+    color: #6f6e6e;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    padding-left: 20px;
+  }
+
+  &-item a:hover {
+    text-decoration: underline;
+  }
+
+  &-item a:active {
+    text-decoration: none;
   }
 }
 
