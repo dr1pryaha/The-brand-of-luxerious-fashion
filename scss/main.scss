@@ -773,42 +773,6 @@
   margin-top: 50px;
   margin-bottom: 65px;
 
-  &-filter {
-    &-btn {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      border: none;
-      background-color: transparent;
-
-      &:hover {
-        fill: #f16d7f;
-        cursor: pointer;
-      }
-
-      &-txt {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000;
-        margin-right: 10px;
-
-        &:hover {
-          color: #f16d7f;
-        }
-      }
-    }
-
-    &-info {
-      display: none;
-      position: absolute;
-      z-index: 1;
-      background-color: white;
-      padding: 22px;
-    }
-  }
-
   &-options {
     display: flex;
     justify-content: space-between;
@@ -868,6 +832,145 @@
   }
 }
 
+// Кнопка FILTER
+#switch-filter {
+  display: none;
+}
+#switch-filter:checked ~ .filter-list-wrp {
+  display: block;
+}
+
+.filter {
+  width: 340px;
+  padding: 0 16px 16px 16px;
+  box-sizing: border-box;
+  background: #ffffff;
+  /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
+  /* NB! */
+  position: relative;
+
+  &-btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 16px 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    text-align: left;
+
+    & span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16.8px;
+      text-transform: uppercase;
+    }
+    & svg {
+      margin: 0 0 0 11px;
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: #f16d7f;
+    }
+    &:active {
+      color: #222224;
+    }
+  }
+  &-list-wrp {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 16px 16px 16px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1;
+  }
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &-item {
+      width: 100%;
+      margin: 0 0 18px 0;
+      padding: 11px;
+      box-sizing: border-box;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16.8px;
+      border-bottom: 1px solid #ebebeb;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 37px;
+        background-color: #ef5b70;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+      }
+      & a {
+        text-transform: uppercase;
+        color: #ef5b70;
+        text-decoration: none;
+      }
+      &:hover::before {
+        background-color: red;
+      }
+      &:hover a {
+        color: red;
+      }
+      &:active::before {
+        background-color: #ccc;
+      }
+      &:active a {
+        color: #ccc;
+      }
+    }
+  }
+
+  &-sublist {
+    margin: 24px 0 0 0;
+    padding: 0 0 0 7px;
+    box-sizing: border-box;
+    list-style: none;
+
+    &-item {
+      margin: 0 0 11px 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16.8px;
+
+      &:last-child {
+        margin: 0 0 24px 0;
+      }
+
+      & a {
+        color: #6f6e6e;
+        text-decoration: none;
+      }
+
+      &:hover a {
+        color: #ef5b70;
+      }
+      &:active a {
+        color: #000;
+      }
+    }
+  }
+}
+
+// Пагинация
 .product-pagination {
   display: flex;
   align-items: center;
