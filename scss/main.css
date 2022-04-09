@@ -34,6 +34,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 .search-icon-form {
@@ -118,6 +119,24 @@
   padding-right: 33px;
 }
 
+.header-nav-item-count {
+  position: absolute;
+  top: -12px;
+  left: 22px;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 14px;
+  padding: 5px 8px;
+  background: #f16d7f;
+  border-radius: 50%;
+}
+
+.header-nav-item:last-child {
+  position: relative;
+}
+
 .header-nav-item-btn {
   background: transparent;
   border: none;
@@ -165,7 +184,7 @@
   list-style: none;
   position: absolute;
   top: 71px;
-  right: 15px;
+  right: 0;
   z-index: 20;
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
@@ -503,6 +522,11 @@
   transition: all 0.2s linear;
 }
 
+.products-button:active {
+  background: #fff;
+  color: #f26376;
+}
+
 .products-card:hover .products-card-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,6 +761,13 @@
   margin: -5px;
 }
 
+.footer-review-subscribe-form-input:hover {
+  border: 1px solid #e6677893;
+  background: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .footer-review-subscribe-form-btn {
   background: #f16d7f;
   border: 1px solid #f16d7f;
@@ -746,6 +777,21 @@
   font-size: 14px;
   letter-spacing: 0.35px;
   padding: 16px 17px;
+}
+
+.footer-review-subscribe-form-btn:hover {
+  background: #ffffff;
+  color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.footer-review-subscribe-form-btn:active {
+  background: #f16d7f;
+  color: #ffffff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .footer-info {
@@ -812,6 +858,31 @@
   background-color: #eff0f5;
 }
 
+.footer-info-social-list-item:hover {
+  background-color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.footer-info-social-list-item:hover .icon {
+  fill: #fff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-info-social-list-item:active {
+  background-color: #eff0f5;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-info-social-list-item:active .icon {
+  fill: #000;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .footer-info-social-list-item-link {
   width: 32px;
   height: 32px;
@@ -820,20 +891,10 @@
   transition: background-color 0.2s;
 }
 
-.icon-facebook {
-  background: url(../img/icon-facebook.svg) center no-repeat;
-}
-
-.icon-instagram {
-  background: url(../img/icon-instagram.svg) center no-repeat;
-}
-
-.icon-pinterest {
-  background: url(../img/icon-pinterest.svg) center no-repeat;
-}
-
-.icon-twitter {
-  background: url(../img/icon-twitter.svg) center no-repeat;
+.icon {
+  fill: #000;
+  display: block;
+  margin: 9px auto;
 }
 
 .header-breadcrumbs {

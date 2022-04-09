@@ -40,6 +40,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    cursor: pointer;
   }
 }
 
@@ -119,16 +120,36 @@
     }
   }
 
-  &-item-btn {
-    background: transparent;
-    border: none;
+  &-item {
+    &-count {
+      position: absolute;
+      top: -12px;
+      left: 22px;
+      font-weight: 400;
+      text-transform: none;
+      font-size: 12px;
+      color: #ffffff;
+      line-height: 14px;
+      padding: 5px 8px;
+      background: #f16d7f;
+      border-radius: 50%;
+    }
 
-    &-svg {
-      fill: #e5e5e5;
+    &:last-child {
+      position: relative;
+    }
 
-      &:hover {
-        cursor: pointer;
-        fill: #f16d7f;
+    &-btn {
+      background: transparent;
+      border: none;
+
+      &-svg {
+        fill: #e5e5e5;
+
+        &:hover {
+          cursor: pointer;
+          fill: #f16d7f;
+        }
       }
     }
   }
@@ -174,7 +195,7 @@
   list-style: none;
   position: absolute;
   top: 71px;
-  right: 15px;
+  right: 0;
   z-index: 20;
   transition: width 1s ease;
 
@@ -564,6 +585,11 @@
       border: 1px solid #ff6a6a;
       transition: all 0.2s linear;
     }
+
+    &:active {
+      background: #fff;
+      color: #f26376;
+    }
   }
 }
 
@@ -763,6 +789,12 @@
         border: 1px solid #e1e1e1;
         padding: 15px 85px 15px 28px;
         margin: -5px;
+
+        &:hover {
+          border: 1px solid #e6677893;
+          background: none;
+          transition: all 0.1s linear;
+        }
       }
       &-btn {
         background: #f16d7f;
@@ -773,6 +805,19 @@
         font-size: 14px;
         letter-spacing: 0.35px;
         padding: 16px 17px;
+
+        &:hover {
+          background: #ffffff;
+          color: #f16d7f;
+          transition: all 0.1s linear;
+          cursor: pointer;
+        }
+
+        &:active {
+          background: #f16d7f;
+          color: #ffffff;
+          transition: all 0.1s linear;
+        }
       }
     }
   }
@@ -813,6 +858,27 @@
         margin-right: 10px;
         background-color: #eff0f5;
 
+        &:hover {
+          background-color: #f16d7f;
+          transition: all 0.1s linear;
+          cursor: pointer;
+
+          & .icon {
+            fill: #fff;
+            transition: all 0.1s linear;
+          }
+        }
+
+        &:active {
+          background-color: #eff0f5;
+          transition: all 0.1s linear;
+
+          & .icon {
+            fill: #000;
+            transition: all 0.1s linear;
+          }
+        }
+
         &-link {
           width: 32px;
           height: 32px;
@@ -824,20 +890,11 @@
   }
 }
 
-.icon-facebook {
-  background: url(../img/icon-facebook.svg) center no-repeat;
-}
-
-.icon-instagram {
-  background: url(../img/icon-instagram.svg) center no-repeat;
-}
-
-.icon-pinterest {
-  background: url(../img/icon-pinterest.svg) center no-repeat;
-}
-
-.icon-twitter {
-  background: url(../img/icon-twitter.svg) center no-repeat;
+.icon {
+  fill: #000;
+  display: block;
+  margin: 9px auto;
+  // background: url(../img/icon-facebook.svg) center no-repeat;
 }
 
 // Стилизация catalog.html
