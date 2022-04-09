@@ -25,6 +25,8 @@
 
 // Стилизация header
 .header {
+  width: 100%;
+  margin: 0 auto;
   background: #222222;
 }
 
@@ -103,7 +105,6 @@
 
 // Стилизация навигации
 .header-nav {
-  margin-right: -28px;
   padding-top: 8px;
   padding-right: 9px;
 
@@ -173,7 +174,7 @@
   list-style: none;
   position: absolute;
   top: 71px;
-  right: 0;
+  right: 15px;
   z-index: 20;
   transition: width 1s ease;
 
@@ -288,6 +289,11 @@
   }
 }
 
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .mark-color {
   color: #f16d7f;
   text-transform: uppercase;
@@ -302,21 +308,20 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 19px;
-
-  &-wrap:not(:last-child) {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
 
   &-card {
     width: 100%;
-    min-width: 360px;
+    max-width: 360px;
+    height: 100%;
     min-height: 260px;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
     position: relative;
+    margin-right: 15px;
   }
 
   &-woomen {
@@ -327,16 +332,12 @@
   &-men {
     background-image: url("../img/offer_2.png");
     background-repeat: no-repeat;
-    width: 100%;
-    min-width: 360px;
   }
 
   &-kids {
     background-image: url("../img/offer_3.png");
     background-repeat: no-repeat;
-    width: 100%;
-    min-width: 360px;
-    min-height: 260px;
+    margin: 0;
   }
 
   &-accesories {
@@ -348,9 +349,10 @@
     justify-content: center;
     margin-top: 30px;
     position: relative;
-    width: 103%;
-    min-width: 360px;
-    min-height: 170px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 175px;
     margin-right: 0;
   }
 
@@ -379,6 +381,7 @@
     text-align: center;
     color: #ffffff;
   }
+
   &-title-heading {
     display: block;
     margin-bottom: 5px;
@@ -677,6 +680,8 @@
 }
 
 .footer {
+  width: 100%;
+  margin: 0 auto;
   background: #222224;
 }
 

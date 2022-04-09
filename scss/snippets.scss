@@ -17,11 +17,11 @@
 }
 
 /*Убрать горизонтальный скролл*/
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
+// html,
+// body {
+//   max-width: 100%;
+//   overflow-x: hidden;
+// }
 
 /*Избавляемся от несоответствий отображения элементов верстки в разных браузерах */
 .clearfix:before,
@@ -65,7 +65,9 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  // max-width: 1920px;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;

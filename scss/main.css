@@ -8,6 +8,8 @@
 }
 
 .header {
+  width: 100%;
+  margin: 0 auto;
   background: #222222;
 }
 
@@ -95,7 +97,6 @@
 }
 
 .header-nav {
-  margin-right: -28px;
   padding-top: 8px;
   padding-right: 9px;
 }
@@ -164,7 +165,7 @@
   list-style: none;
   position: absolute;
   top: 71px;
-  right: 0;
+  right: 15px;
   z-index: 20;
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
@@ -288,6 +289,11 @@
   line-height: 38px;
 }
 
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .mark-color {
   color: #f16d7f;
   text-transform: uppercase;
@@ -300,31 +306,31 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.offer-wrap:not(:last-child) {
+.offer-card {
+  width: 100%;
+  max-width: 360px;
+  height: 100%;
+  min-height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-}
-
-.offer-card {
-  width: 100%;
-  min-width: 360px;
-  min-height: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 30px;
   position: relative;
+  margin-right: 15px;
 }
 
 .offer-woomen {
@@ -335,16 +341,12 @@
 .offer-men {
   background-image: url("../img/offer_2.png");
   background-repeat: no-repeat;
-  width: 100%;
-  min-width: 360px;
 }
 
 .offer-kids {
   background-image: url("../img/offer_3.png");
   background-repeat: no-repeat;
-  width: 100%;
-  min-width: 360px;
-  min-height: 260px;
+  margin: 0;
 }
 
 .offer-accesories {
@@ -362,9 +364,10 @@
           justify-content: center;
   margin-top: 30px;
   position: relative;
-  width: 103%;
-  min-width: 360px;
-  min-height: 170px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 175px;
   margin-right: 0;
 }
 
@@ -630,6 +633,8 @@
 }
 
 .footer {
+  width: 100%;
+  margin: 0 auto;
   background: #222224;
 }
 
