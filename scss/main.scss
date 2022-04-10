@@ -1577,6 +1577,17 @@
     border: 1px solid #a4a4a4;
     padding: 13px 0 16px 17px;
     margin-top: 20px;
+
+    &:hover {
+      border: 1px solid #e6677893;
+      background: none;
+      transition: all 0.1s linear;
+
+      &::placeholder {
+        color: #e6677893;
+        transition: all 0.1s linear;
+      }
+    }
   }
 
   &-form-label {
@@ -1602,11 +1613,17 @@
     max-width: 168px;
     color: #ffffff;
     padding: 16px 26px 17px 29px;
-    transition: all 0.1s linear;
 
     &:hover {
       background: #ffffff;
       color: #f16d7f;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      background: #f16d7f;
+      color: #fff;
+      transition: all 0.1s linear;
     }
   }
 

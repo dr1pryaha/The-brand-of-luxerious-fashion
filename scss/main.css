@@ -1826,6 +1826,37 @@
   margin-top: 20px;
 }
 
+.registration-input:hover {
+  border: 1px solid #e6677893;
+  background: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover::-webkit-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover:-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover::-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover::placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .registration-form-label {
   display: inline-block;
   margin-top: 33px;
@@ -1849,13 +1880,20 @@
   max-width: 168px;
   color: #ffffff;
   padding: 16px 26px 17px 29px;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
 }
 
 .registration-btn:hover {
   background: #ffffff;
   color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-btn:active {
+  background: #f16d7f;
+  color: #fff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .registration-btn-svg {
