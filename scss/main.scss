@@ -700,6 +700,11 @@
           border: 1px solid #e6677893;
           background: none;
           transition: all 0.1s linear;
+
+          &::placeholder {
+            color: #e6677893;
+            transition: all 0.1s linear;
+          }
         }
       }
       &-btn {
@@ -1296,11 +1301,19 @@
   margin-right: 22px;
   border: none;
   height: 18px;
+  fill: #575757;
 
   &-svg {
     &:hover {
       cursor: pointer;
       fill: #f16d7f;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      cursor: pointer;
+      fill: #575757;
+      transition: all 0.1s linear;
     }
   }
 }
@@ -1318,9 +1331,17 @@
 
   &:hover {
     cursor: pointer;
+    border: 1px solid #f16d7f;
     background: #f16d7f;
     color: #ffffff;
-    fill: #ffffff;
+    transition: all 0.1s linear;
+  }
+
+  &:active {
+    cursor: pointer;
+    background-color: transparent;
+    color: #f16d7f;
+    transition: all 0.1s linear;
   }
 }
 
@@ -1345,6 +1366,17 @@
     border: 1px solid #a4a4a4;
     padding: 13px 0 16px 17px;
     margin-top: 20px;
+
+    &:hover {
+      border: 1px solid #e6677893;
+      background: none;
+      transition: all 0.1s linear;
+
+      &::placeholder {
+        color: #e6677893;
+        transition: all 0.1s linear;
+      }
+    }
   }
 
   &-title {
@@ -1367,12 +1399,21 @@
     text-transform: uppercase;
     line-height: 16px;
     color: #b1b1b1;
+    fill: #575757;
 
     &:hover {
       cursor: pointer;
+      border: 1px solid #f16d7f;
       background: #f16d7f;
       color: #ffffff;
-      fill: #ffffff;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      cursor: pointer;
+      background-color: transparent;
+      color: #f16d7f;
+      transition: all 0.1s linear;
     }
   }
 }
@@ -1398,8 +1439,18 @@
     margin-top: 17px;
 
     &:hover {
-      background: #ffffff;
+      cursor: pointer;
+      border: 1px solid #f16d7f;
+      background: #fff;
       color: #f16d7f;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      cursor: pointer;
+      background: #f16d7f;
+      color: #fff;
+      transition: all 0.1s linear;
     }
   }
 

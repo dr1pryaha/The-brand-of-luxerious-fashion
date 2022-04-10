@@ -773,6 +773,30 @@
   transition: all 0.1s linear;
 }
 
+.footer-review-subscribe-form-input:hover::-webkit-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-review-subscribe-form-input:hover:-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-review-subscribe-form-input:hover::-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-review-subscribe-form-input:hover::placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .footer-review-subscribe-form-btn {
   background: #f16d7f;
   border: 1px solid #f16d7f;
@@ -1482,11 +1506,21 @@
   margin-right: 22px;
   border: none;
   height: 18px;
+  fill: #575757;
 }
 
 .close-btn-svg:hover {
   cursor: pointer;
   fill: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.close-btn-svg:active {
+  cursor: pointer;
+  fill: #575757;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .clear-btn,
@@ -1504,9 +1538,20 @@
 .clear-btn:hover,
 .continue-btn:hover {
   cursor: pointer;
+  border: 1px solid #f16d7f;
   background: #f16d7f;
   color: #ffffff;
-  fill: #ffffff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.clear-btn:active,
+.continue-btn:active {
+  cursor: pointer;
+  background-color: transparent;
+  color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .shopping-form {
@@ -1538,6 +1583,37 @@
   margin-top: 20px;
 }
 
+.delivery-address:hover {
+  border: 1px solid #e6677893;
+  background: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover::-webkit-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover:-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover::-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover::placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .delivery-title {
   font-weight: 300;
   font-size: 16px;
@@ -1558,13 +1634,24 @@
   text-transform: uppercase;
   line-height: 16px;
   color: #b1b1b1;
+  fill: #575757;
 }
 
 .delivery-btn:hover {
   cursor: pointer;
+  border: 1px solid #f16d7f;
   background: #f16d7f;
   color: #ffffff;
-  fill: #ffffff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-btn:active {
+  cursor: pointer;
+  background-color: transparent;
+  color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .shopping-form-cost {
@@ -1588,8 +1675,20 @@
 }
 
 .cost-btn:hover {
-  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #f16d7f;
+  background: #fff;
   color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.cost-btn:active {
+  cursor: pointer;
+  background: #f16d7f;
+  color: #fff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .cost-total {
