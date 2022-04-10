@@ -319,6 +319,9 @@
 }
 
 .offer {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
   margin-bottom: 96px;
   color: #ffffff;
   text-transform: uppercase;
@@ -330,6 +333,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .offer-card {
@@ -349,7 +355,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin-right: 15px;
 }
 
 .offer-woomen {
@@ -365,7 +370,6 @@
 .offer-kids {
   background-image: url("../img/offer_3.png");
   background-repeat: no-repeat;
-  margin: 0;
 }
 
 .offer-accesories {
@@ -385,8 +389,7 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 100%;
-  min-height: 175px;
+  height: 175px;
   margin-right: 0;
 }
 
@@ -417,7 +420,8 @@
 }
 
 .products {
-  width: 1140px;
+  width: 100%;
+  max-width: 1140px;
   margin: 0 auto;
   margin-bottom: 95px;
   text-align: center;
@@ -579,6 +583,7 @@
   position: absolute;
   top: 30%;
   left: 30%;
+  cursor: pointer;
 }
 
 .products-card-btn svg {
@@ -1345,6 +1350,12 @@
   cursor: pointer;
   background: #f16d7f;
   color: #ffffff;
+}
+
+.product-sort__button:active {
+  cursor: pointer;
+  background: #ffffff;
+  color: #f16d7f;
 }
 
 .prod-prev {
