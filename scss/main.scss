@@ -498,6 +498,8 @@
 // Стилизация блока products
 
 .products {
+  width: 1140px;
+  margin: 0 auto;
   margin-bottom: 95px;
   text-align: center;
   display: flex;
@@ -522,12 +524,13 @@
 
   &-wrap {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
   }
 
   &-card {
+    width: 360px;
     text-align: start;
     position: relative;
 
@@ -561,11 +564,12 @@
     }
   }
 
-  &-card:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &-card:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &-image {
+    display: block;
     margin-bottom: 25px;
     width: 100%;
   }
@@ -637,8 +641,8 @@
   line-height: 17px;
   color: #ffffff;
   position: absolute;
-  top: 188px;
-  left: 32.7%;
+  top: 30%;
+  left: 30%;
 }
 
 .products-card-btn svg {
@@ -894,7 +898,6 @@
   fill: #000;
   display: block;
   margin: 9px auto;
-  // background: url(../img/icon-facebook.svg) center no-repeat;
 }
 
 // Стилизация catalog.html
