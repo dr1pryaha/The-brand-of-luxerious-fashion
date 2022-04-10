@@ -28,6 +28,19 @@
     align-items: flex-end;
     justify-content: space-between;
     cursor: pointer;
+
+    &-svg {
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s linear;
+      }
+    }
+
+    &:active {
+      cursor: pointer;
+      fill: #e5e5e5;
+      transition: all 0.1s linear;
+    }
   }
 }
 
@@ -48,6 +61,7 @@
 .search-icon-form__label:hover .search-icon-form__svg {
   cursor: pointer;
   fill: #f16d7f;
+  transition: all 0.1s linear;
 }
 
 .search-icon-form__label:active .search-icon-form__svg {
@@ -135,6 +149,13 @@
         &:hover {
           cursor: pointer;
           fill: #f16d7f;
+          transition: all 0.1s linear;
+        }
+
+        &:active {
+          cursor: pointer;
+          fill: #e5e5e5;
+          transition: all 0.1s linear;
         }
       }
     }
@@ -159,6 +180,13 @@
   &:hover {
     fill: #f16d7f;
     cursor: pointer;
+    transition: all 0.1s linear;
+  }
+
+  &:active {
+    fill: #575757;
+    cursor: pointer;
+    transition: all 0.1s linear;
   }
 }
 
