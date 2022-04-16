@@ -306,7 +306,6 @@
 }
 
 .poster-promo-text {
-  margin-bottom: 100px;
   color: #222222;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -971,7 +970,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: uppercase;
-  background: #f8f3f4;
 }
 
 .header-breadcrumbs-title {
@@ -1012,6 +1010,10 @@
   color: #f16d7f;
 }
 
+.breadcrumbs-wrap {
+  background: #f8f3f4;
+}
+
 .product-sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1035,7 +1037,7 @@
 }
 
 .product-sidebar-options-details {
-  padding-right: 48px;
+  padding-right: 42px;
   cursor: pointer;
   position: relative;
 }
@@ -1309,6 +1311,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
+  background: #f7f7f7;
 }
 
 .carousel-btn {
@@ -1338,6 +1341,7 @@
           align-items: center;
   margin-top: 65px;
   margin-bottom: 195px;
+  background: #ffffff;
 }
 
 .product-description-title {
@@ -1441,6 +1445,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 96px;
 }
 
 .shopping-cart {
