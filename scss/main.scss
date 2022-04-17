@@ -28,6 +28,19 @@
     align-items: flex-end;
     justify-content: space-between;
     cursor: pointer;
+
+    &-svg {
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s linear;
+      }
+    }
+
+    &:active {
+      cursor: pointer;
+      fill: #e5e5e5;
+      transition: all 0.1s linear;
+    }
   }
 }
 
@@ -48,6 +61,7 @@
 .search-icon-form__label:hover .search-icon-form__svg {
   cursor: pointer;
   fill: #f16d7f;
+  transition: all 0.1s linear;
 }
 
 .search-icon-form__label:active .search-icon-form__svg {
@@ -135,6 +149,13 @@
         &:hover {
           cursor: pointer;
           fill: #f16d7f;
+          transition: all 0.1s linear;
+        }
+
+        &:active {
+          cursor: pointer;
+          fill: #e5e5e5;
+          transition: all 0.1s linear;
         }
       }
     }
@@ -159,6 +180,13 @@
   &:hover {
     fill: #f16d7f;
     cursor: pointer;
+    transition: all 0.1s linear;
+  }
+
+  &:active {
+    fill: #575757;
+    cursor: pointer;
+    transition: all 0.1s linear;
   }
 }
 
@@ -296,6 +324,7 @@
   }
 }
 
+// Стилизация блока main
 .main {
   width: 100%;
   margin: 0 auto;
@@ -352,7 +381,7 @@
   &-accesories {
     background-image: url("../img/offer_4.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -700,6 +729,11 @@
           border: 1px solid #e6677893;
           background: none;
           transition: all 0.1s linear;
+
+          &::placeholder {
+            color: #e6677893;
+            transition: all 0.1s linear;
+          }
         }
       }
       &-btn {
@@ -1278,13 +1312,13 @@
   border: none;
   text-align: left;
   font-weight: 400;
-  font-size: 22px;
-  text-transform: capitalize;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 22px;
   color: #656565;
   text-align: center;
   width: 43px;
   height: 24px;
+  margin-left: 24px;
 }
 
 .quantity-txt {
@@ -1296,11 +1330,19 @@
   margin-right: 22px;
   border: none;
   height: 18px;
+  fill: #575757;
 
   &-svg {
     &:hover {
       cursor: pointer;
       fill: #f16d7f;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      cursor: pointer;
+      fill: #575757;
+      transition: all 0.1s linear;
     }
   }
 }
@@ -1318,9 +1360,17 @@
 
   &:hover {
     cursor: pointer;
+    border: 1px solid #f16d7f;
     background: #f16d7f;
     color: #ffffff;
-    fill: #ffffff;
+    transition: all 0.1s linear;
+  }
+
+  &:active {
+    cursor: pointer;
+    background-color: transparent;
+    color: #f16d7f;
+    transition: all 0.1s linear;
   }
 }
 
@@ -1345,6 +1395,17 @@
     border: 1px solid #a4a4a4;
     padding: 13px 0 16px 17px;
     margin-top: 20px;
+
+    &:hover {
+      border: 1px solid #e6677893;
+      background: none;
+      transition: all 0.1s linear;
+
+      &::placeholder {
+        color: #e6677893;
+        transition: all 0.1s linear;
+      }
+    }
   }
 
   &-title {
@@ -1367,12 +1428,21 @@
     text-transform: uppercase;
     line-height: 16px;
     color: #b1b1b1;
+    fill: #575757;
 
     &:hover {
       cursor: pointer;
+      border: 1px solid #f16d7f;
       background: #f16d7f;
       color: #ffffff;
-      fill: #ffffff;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      cursor: pointer;
+      background-color: transparent;
+      color: #f16d7f;
+      transition: all 0.1s linear;
     }
   }
 }
@@ -1398,8 +1468,18 @@
     margin-top: 17px;
 
     &:hover {
-      background: #ffffff;
+      cursor: pointer;
+      border: 1px solid #f16d7f;
+      background: #fff;
       color: #f16d7f;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      cursor: pointer;
+      background: #f16d7f;
+      color: #fff;
+      transition: all 0.1s linear;
     }
   }
 
@@ -1526,6 +1606,17 @@
     border: 1px solid #a4a4a4;
     padding: 13px 0 16px 17px;
     margin-top: 20px;
+
+    &:hover {
+      border: 1px solid #e6677893;
+      background: none;
+      transition: all 0.1s linear;
+
+      &::placeholder {
+        color: #e6677893;
+        transition: all 0.1s linear;
+      }
+    }
   }
 
   &-form-label {
@@ -1551,11 +1642,17 @@
     max-width: 168px;
     color: #ffffff;
     padding: 16px 26px 17px 29px;
-    transition: all 0.1s linear;
 
     &:hover {
       background: #ffffff;
       color: #f16d7f;
+      transition: all 0.1s linear;
+    }
+
+    &:active {
+      background: #f16d7f;
+      color: #fff;
+      transition: all 0.1s linear;
     }
   }
 

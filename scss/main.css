@@ -37,6 +37,22 @@
   cursor: pointer;
 }
 
+.header-menu-logo-svg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+.header-menu-logo:active {
+  cursor: pointer;
+  fill: #e5e5e5;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .search-icon-form {
   width: 27px;
   height: 35px;
@@ -53,6 +69,8 @@
 .search-icon-form__label:hover .search-icon-form__svg {
   cursor: pointer;
   fill: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .search-icon-form__label:active .search-icon-form__svg {
@@ -149,6 +167,15 @@
 .header-nav-item-btn-svg:hover {
   cursor: pointer;
   fill: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.header-nav-item-btn-svg:active {
+  cursor: pointer;
+  fill: #e5e5e5;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .menu-btn-close {
@@ -163,6 +190,15 @@
 .btn-close-svg:hover {
   fill: #f16d7f;
   cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.btn-close-svg:active {
+  fill: #575757;
+  cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .menu-btn,
@@ -375,7 +411,8 @@
 .offer-accesories {
   background-image: url("../img/offer_4.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,6 +806,30 @@
 .footer-review-subscribe-form-input:hover {
   border: 1px solid #e6677893;
   background: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-review-subscribe-form-input:hover::-webkit-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-review-subscribe-form-input:hover:-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-review-subscribe-form-input:hover::-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer-review-subscribe-form-input:hover::placeholder {
+  color: #e6677893;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
@@ -1464,13 +1525,13 @@
   border: none;
   text-align: left;
   font-weight: 400;
-  font-size: 22px;
-  text-transform: capitalize;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 22px;
   color: #656565;
   text-align: center;
   width: 43px;
   height: 24px;
+  margin-left: 24px;
 }
 
 .quantity-txt {
@@ -1482,11 +1543,21 @@
   margin-right: 22px;
   border: none;
   height: 18px;
+  fill: #575757;
 }
 
 .close-btn-svg:hover {
   cursor: pointer;
   fill: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.close-btn-svg:active {
+  cursor: pointer;
+  fill: #575757;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .clear-btn,
@@ -1504,9 +1575,20 @@
 .clear-btn:hover,
 .continue-btn:hover {
   cursor: pointer;
+  border: 1px solid #f16d7f;
   background: #f16d7f;
   color: #ffffff;
-  fill: #ffffff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.clear-btn:active,
+.continue-btn:active {
+  cursor: pointer;
+  background-color: transparent;
+  color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .shopping-form {
@@ -1538,6 +1620,37 @@
   margin-top: 20px;
 }
 
+.delivery-address:hover {
+  border: 1px solid #e6677893;
+  background: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover::-webkit-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover:-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover::-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-address:hover::placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .delivery-title {
   font-weight: 300;
   font-size: 16px;
@@ -1558,13 +1671,24 @@
   text-transform: uppercase;
   line-height: 16px;
   color: #b1b1b1;
+  fill: #575757;
 }
 
 .delivery-btn:hover {
   cursor: pointer;
+  border: 1px solid #f16d7f;
   background: #f16d7f;
   color: #ffffff;
-  fill: #ffffff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.delivery-btn:active {
+  cursor: pointer;
+  background-color: transparent;
+  color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .shopping-form-cost {
@@ -1588,8 +1712,20 @@
 }
 
 .cost-btn:hover {
-  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #f16d7f;
+  background: #fff;
   color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.cost-btn:active {
+  cursor: pointer;
+  background: #f16d7f;
+  color: #fff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .cost-total {
@@ -1727,6 +1863,37 @@
   margin-top: 20px;
 }
 
+.registration-input:hover {
+  border: 1px solid #e6677893;
+  background: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover::-webkit-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover:-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover::-ms-input-placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-input:hover::placeholder {
+  color: #e6677893;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
 .registration-form-label {
   display: inline-block;
   margin-top: 33px;
@@ -1750,13 +1917,20 @@
   max-width: 168px;
   color: #ffffff;
   padding: 16px 26px 17px 29px;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
 }
 
 .registration-btn:hover {
   background: #ffffff;
   color: #f16d7f;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.registration-btn:active {
+  background: #f16d7f;
+  color: #fff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .registration-btn-svg {
