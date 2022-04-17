@@ -53,7 +53,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../img/header_icon_search.svg") cover no-repeat;
+  // background: url("../img/header_icon_search.svg") cover no-repeat;
 }
 
 .search-icon-form__label:hover .search-icon-form__svg {
@@ -817,6 +817,7 @@
     &-details {
       padding-right: 48px;
       cursor: pointer;
+      position: relative;
 
       &-summary {
         display: flex;
@@ -901,4 +902,117 @@
 
 .product-current {
   color: #ef5b70;
+}
+
+// Стилизация product.html
+.product-preview {
+  &-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+.carousel-btn {
+  padding: 13px 17px;
+  background-color: #d8d8d8;
+  border: none;
+
+  &:hover {
+    fill: #f16d7f;
+  }
+}
+
+.carousel-arrow {
+  display: block;
+}
+
+.product-preview-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+  margin-bottom: 195px;
+}
+
+.product-description {
+  &-title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f16d7f;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      display: block;
+      margin: 12px auto;
+      width: 63px;
+      height: 3px;
+      background-color: #f16d7f;
+    }
+  }
+
+  &-heading {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+
+  &-txt {
+    font-weight: 300;
+    font-size: 14px;
+    color: #5e5e5e;
+    line-height: 17px;
+    max-width: 580px;
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+
+  &-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ef5b70;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.product-sort__button {
+  margin: 49px auto 0;
+  border: 1px solid #f16d7f;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 46px;
+  color: #f16d7f;
+  transition: all 0.1s linear;
+}
+
+.product-sort__button-svg {
+  margin-right: 23px;
+  fill: currentColor;
+}
+
+.product-sort__button:hover {
+  cursor: pointer;
+  background: #f16d7f;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.prod-prev {
+  margin-top: 130px;
+  margin-right: 0;
+  padding-left: 80px;
 }
