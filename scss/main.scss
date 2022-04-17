@@ -1,5 +1,5 @@
 // Подключение сниппетов
-@import url(./snippets.css);
+@import url("./snippets.css");
 
 // Создание отступов между колонками
 .container {
@@ -228,7 +228,9 @@
 
       &:first-child {
         margin: 0 0 24px 0;
-        font-weight: bold;
+        font-family: "lato-bold";
+        font-style: normal;
+        font-weight: 700;
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase;
@@ -237,6 +239,9 @@
       & > a {
         display: block;
         margin: 0 0 12px 0;
+        font-family: "lato-regular";
+        font-style: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase;
@@ -257,6 +262,9 @@
 
   &-item a {
     color: #6f6e6e;
+    font-family: "lato-regular";
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
@@ -290,7 +298,7 @@
     &-text {
       // margin-right: 85px;
       color: #222222;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
       &::before {
         content: " ";
@@ -305,7 +313,9 @@
         display: flex;
         flex-direction: column;
         color: #222222;
-        font-weight: 700;
+        font-family: "lato-black";
+        font-style: normal;
+        font-weight: 900;
         font-size: 48px;
         line-height: 58px;
         margin-right: 62px;
@@ -315,6 +325,8 @@
       &-nowrap {
         text-transform: uppercase;
         white-space: nowrap;
+        font-family: "lato-bold";
+        font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 38px;
@@ -343,8 +355,6 @@
   margin-bottom: 96px;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 18px;
   line-height: 19px;
   display: flex;
   flex-wrap: wrap;
@@ -422,8 +432,16 @@
     display: block;
     margin-bottom: 5px;
     font-weight: 400;
+    font-family: "lato-regular";
+    font-style: normal;
     font-size: 16px;
     line-height: 19px;
+  }
+
+  &-mark {
+    font-family: "lato-bold";
+    font-weight: 700;
+    font-size: 24px;
   }
 }
 
@@ -441,6 +459,8 @@
   justify-content: center;
 
   &-title {
+    font-family: "lato-regular";
+    font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
@@ -449,6 +469,8 @@
 
   &-text {
     color: #9f9f9f;
+    font-family: "lato-regular";
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -464,11 +486,14 @@
 
   &-card {
     width: 360px;
+    margin-bottom: 30px;
     text-align: start;
     position: relative;
 
     &-title {
       color: #000000;
+      font-family: "lato-bold";
+      font-style: normal;
       font-weight: 400;
       font-size: 13px;
       line-height: 16px;
@@ -479,6 +504,8 @@
 
     &-description {
       color: #5d5d5d;
+      font-family: "lato-light";
+      font-style: normal;
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
@@ -489,6 +516,8 @@
     &-price {
       display: block;
       color: #f16d7f;
+      font-family: "lato-regular";
+      font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
@@ -507,6 +536,8 @@
     border: 1px solid #ff6a6a;
     color: #f26376;
     display: inline-block;
+    font-family: "lato-regular";
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -620,19 +651,22 @@
 
   &-title {
     margin-top: auto; //Выравнивает отступ текста после картинок разной высоты
+    font-family: "lato-regular";
+    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 19.96px;
     line-height: 24px;
     color: #fbfbfb;
   }
 
   &-text {
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13.972px;
     line-height: 17px;
     text-align: center;
     color: #fbfbfb;
-    margin-top: 16px;
   }
   &-img {
     margin-bottom: 28px;
@@ -666,6 +700,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      font-family: "lato-regular";
+      font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 24px;
@@ -701,6 +737,8 @@
     text-transform: uppercase;
 
     > h2 {
+      font-family: "lato-bold";
+      font-style: normal;
       font-weight: 700;
       font-size: 24px;
       line-height: 167.2%;
@@ -709,6 +747,8 @@
 
     &-txt {
       display: block;
+      font-family: "lato-regular";
+      font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 167.2%;
@@ -716,6 +756,11 @@
 
     &-form {
       margin-top: 32px;
+      font-family: "lato-regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
 
       &-input {
         border-radius: 23px 0 0 23px;
@@ -772,6 +817,8 @@
     margin-top: 30px;
     margin-bottom: 30px;
     align-items: center;
+    font-family: "lato-regular";
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -842,6 +889,8 @@
   text-transform: uppercase;
 
   &-title {
+    font-family: "lato-regular";
+    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -853,6 +902,8 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -871,6 +922,14 @@
       }
     }
   }
+}
+
+.last-breadcrumbs {
+  font-family: "lato-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .breadcrumbs-wrap {
@@ -899,6 +958,8 @@
         align-items: center;
         list-style: none;
         margin-right: 28px;
+        font-family: "lato-regular";
+        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
@@ -920,6 +981,8 @@
         }
 
         &-form-label {
+          font-family: "roboto";
+          font-style: normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 16px;
@@ -970,10 +1033,11 @@
     text-align: left;
 
     & span {
+      font-family: "lato-bold";
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 14px;
-      line-height: 16.8px;
+      line-height: 17px;
       text-transform: uppercase;
     }
     & svg {
@@ -1011,10 +1075,11 @@
       margin: 0 0 18px 0;
       padding: 11px;
       box-sizing: border-box;
+      font-family: "lato-regular";
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
-      line-height: 16.8px;
+      line-height: 17px;
       border-bottom: 1px solid #ebebeb;
       position: relative;
 
@@ -1056,10 +1121,11 @@
 
     &-item {
       margin: 0 0 11px 0;
+      font-family: "lato-regular";
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
-      line-height: 16.8px;
+      line-height: 17px;
 
       &:last-child {
         margin: 0 0 24px 0;
@@ -1096,7 +1162,9 @@
   }
 
   .product-list-link {
-    color: #6f6e6e;
+    color: #c4c4c4;
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -1154,6 +1222,8 @@
 
 .product-description {
   &-title {
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -1172,6 +1242,8 @@
   }
 
   &-heading {
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
@@ -1181,16 +1253,20 @@
   }
 
   &-txt {
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    color: #5e5e5e;
     line-height: 17px;
+    color: #5e5e5e;
     max-width: 580px;
     margin: 0 auto 32px;
     text-align: center;
   }
 
   &-price {
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -1201,14 +1277,15 @@
 }
 
 .product-sort__button {
+  font-family: "lato-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   margin: 49px auto 0;
   border: 1px solid #f16d7f;
   background: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 10px 46px;
   color: #f16d7f;
@@ -1269,6 +1346,8 @@
       margin-right: 85px;
 
       &-title {
+        font-family: "lato-regular";
+        font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
@@ -1279,10 +1358,11 @@
       }
 
       &-txt {
+        font-family: "lato-regular";
+        font-style: normal;
         font-weight: 400;
-        text-transform: capitalize;
         font-size: 22px;
-        line-height: 27px;
+        line-height: 26px;
         color: #575757;
         margin-top: 6px;
 
@@ -1316,6 +1396,8 @@
   display: inline-block;
   border: none;
   text-align: left;
+  font-family: "lato-regular";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -1331,6 +1413,7 @@
 }
 
 .close-btn {
+  background: none;
   margin-top: 22px;
   margin-right: 22px;
   border: none;
@@ -1338,6 +1421,8 @@
   fill: #575757;
 
   &-svg {
+    background: none;
+
     &:hover {
       cursor: pointer;
       fill: #f16d7f;
@@ -1357,6 +1442,8 @@
   border: 1px solid #a4a4a4;
   padding: 16px 20px;
   background-color: transparent;
+  font-family: "lato-light";
+  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1393,10 +1480,12 @@
 .delivery {
   &-address {
     width: 100%;
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
-    text-transform: capitalize;
     font-size: 13px;
     line-height: 16px;
+    text-transform: capitalize;
     border: 1px solid #a4a4a4;
     padding: 13px 0 16px 17px;
     margin-top: 20px;
@@ -1414,10 +1503,12 @@
   }
 
   &-title {
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 16px;
+    line-height: 19px;
     text-transform: uppercase;
-    line-height: 20px;
     color: #222222;
     margin: 0;
   }
@@ -1428,10 +1519,12 @@
     margin-top: 23px;
     padding: 11px 12px 11px 12px;
     background: #ffffff;
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 11px;
+    line-height: 13px;
     text-transform: uppercase;
-    line-height: 16px;
     color: #b1b1b1;
     fill: #575757;
 
@@ -1464,10 +1557,12 @@
     display: inline-block;
     border: 1px solid #f16d7f;
     background: #f16d7f;
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    text-transform: uppercase;
     line-height: 19px;
+    text-transform: uppercase;
     color: #ffffff;
     padding: 14px;
     margin-top: 17px;
@@ -1514,15 +1609,19 @@
 
   &-grand {
     display: inline-block;
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    text-transform: uppercase;
     line-height: 19px;
+    text-transform: uppercase;
 
     &-value {
       display: inline-block;
       border: none;
       text-align: left;
+      font-family: "lato-bold";
+      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 19px;
@@ -1550,12 +1649,22 @@
     margin-right: 128px;
 
     &-txt {
+      font-family: "lato-light";
+      font-style: normal;
       font-weight: 300;
       font-size: 13px;
       line-height: 16px;
       color: #b1b1b1;
       margin-bottom: 39px;
       margin-top: 15px;
+    }
+
+    &-label {
+      font-family: "lato-light";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
     }
   }
 
@@ -1564,6 +1673,8 @@
     flex: 0 0 60%;
 
     &-title {
+      font-family: "lato-light";
+      font-style: normal;
       font-weight: 300;
       font-size: 24px;
       line-height: 29px;
@@ -1573,6 +1684,8 @@
     }
 
     &-txt {
+      font-family: "lato-light";
+      font-style: normal;
       font-weight: 300;
       font-size: 24px;
       line-height: 29px;
@@ -1581,6 +1694,8 @@
     }
 
     &-item {
+      font-family: "lato-light";
+      font-style: normal;
       font-weight: 300;
       font-size: 24px;
       line-height: 29px;
@@ -1594,6 +1709,8 @@
   }
 
   &-name {
+    font-family: "lato-light";
+    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -1606,6 +1723,9 @@
     max-width: 360px;
     font-weight: 300;
     text-transform: capitalize;
+    font-family: "lato-light";
+    font-style: normal;
+    font-weight: 300;
     font-size: 13px;
     line-height: 16px;
     border: 1px solid #a4a4a4;
@@ -1640,8 +1760,11 @@
     border: 1px solid #f16d7f;
     background: #f16d7f;
     cursor: pointer;
+    font-family: "lato-regular";
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 17px;
     text-transform: uppercase;
     line-height: 17px;
     max-width: 168px;

@@ -1,6 +1,6 @@
 @font-face {
   // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
-  font-family: "lato-regular", sans-serif;
+  font-family: "lato-regular";
   // адрес шрифта и тип
   src: url("../fonts/lato-regular.ttf") format("truetype");
   font-weight: 300;
@@ -9,7 +9,7 @@
 
 @font-face {
   // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
-  font-family: "lato-regular", sans-serif;
+  font-family: "lato-regular";
   // адрес шрифта и тип
   src: url("../fonts/lato-regular.ttf") format("truetype");
   font-weight: 400;
@@ -18,7 +18,7 @@
 
 @font-face {
   // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
-  font-family: "lato-regular", sans-serif;
+  font-family: "lato-regular";
   // адрес шрифта и тип
   src: url("../fonts/lato-regular.ttf") format("truetype");
   font-weight: 700;
@@ -27,16 +27,16 @@
 
 @font-face {
   // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
-  font-family: "lato-regular", sans-serif;
+  font-family: "lato-bold";
   // адрес шрифта и тип
-  src: url("../fonts/lato-regular.ttf") format("truetype");
-  font-weight: 900;
+  src: url("../fonts/lato-bold.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
-  font-family: "lato-bold", sans-serif;
+  font-family: "lato-bold";
   // адрес шрифта и тип
   src: url("../fonts/lato-bold.ttf") format("truetype");
   font-weight: 700;
@@ -45,10 +45,46 @@
 
 @font-face {
   // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
-  font-family: "lato-bold", sans-serif;
+  font-family: "lato-bold";
   // адрес шрифта и тип
   src: url("../fonts/lato-bold.ttf") format("truetype");
   font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-black";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-light";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-italic";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "roboto";
+  // адрес шрифта и тип
+  src: url("../fonts/roboto-regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -59,6 +95,10 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: "antialiased";
 }
 
 /*Убрать горизонтальный скролл*/
@@ -118,6 +158,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   // font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
