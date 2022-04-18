@@ -1077,6 +1077,8 @@
 }
 
 .product-sidebar {
+  width: 100%;
+  max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2105,6 +2107,12 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .product-sidebar-options {
+    margin-right: 0;
+  }
+  .filter {
+    width: auto;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -2277,6 +2285,41 @@
   .footer-review-subscribe-form {
     margin-top: 27px;
   }
+  .adaptive-container {
+    padding: 0 16px;
+  }
+  .product-sidebar {
+    margin: 24px 0 40px;
+  }
+  .product-sidebar-options {
+    margin: 0;
+  }
+  .product-sidebar-options-details {
+    padding-right: 28px;
+  }
+  .product-sidebar-options-details:last-child {
+    padding-right: 0;
+  }
+  .product-sidebar-options-details-summary {
+    margin-right: 0;
+  }
+  .product-sidebar-options-details-summary-form-label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .right {
+    right: -17px;
+  }
+  .filter {
+    padding: 0;
+  }
+  .filter-list-wrp {
+    padding: 0;
+  }
+  .hidden-card {
+    display: none;
+  }
 }
 
 @media (max-width: 698px) {
@@ -2330,6 +2373,30 @@
   }
 }
 
+@media (max-width: 420px) {
+  .filter-btn > span {
+    display: none;
+  }
+  .filter-btn > svg {
+    width: 37px;
+    height: 25px;
+    margin-left: 0;
+  }
+  .product-sidebar-options-details {
+    padding-right: 24px;
+  }
+  .product-sidebar-options-details-summary {
+    font-family: "lato-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product-sidebar-options-details-summary-svg {
+    margin-left: 9px;
+  }
+}
+
 @media (max-width: 375px) {
   .container {
     padding: 0 16px;
@@ -2368,6 +2435,12 @@
   .poster-promo-text-nowrap {
     font-size: 20px;
     line-height: 24px;
+  }
+  .menu {
+    width: 180px;
+    height: auto;
+    top: 51px;
+    right: -16px;
   }
   .products-wrap {
     -webkit-box-pack: сenter;
@@ -2453,6 +2526,67 @@
   .footer-info-rights {
     margin-top: 40px;
     margin-bottom: 9px;
+  }
+  .header-breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 46px;
+  }
+  .header-breadcrumbs-title {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .product-sidebar {
+    margin: 24px 0 40px;
+  }
+  .product-sidebar-options {
+    margin: 0;
+  }
+  .product-sidebar-options-details {
+    padding-right: 28px;
+  }
+  .product-sidebar-options-details:last-child {
+    padding-right: 0;
+  }
+  .product-sidebar-options-details-summary {
+    margin-right: 0;
+  }
+  .product-sidebar-options-details-summary-form-label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .right {
+    right: -17px;
+  }
+  .filter {
+    padding: 0;
+    width: 0;
+  }
+  .filter-list-wrp {
+    padding: 0;
+  }
+  .hidden-card {
+    display: none;
+  }
+  .product-sidebar__filter {
+    margin-left: -16px;
+  }
+  .filter-btn > span {
+    display: none;
+  }
+  .filter-btn > svg {
+    width: 37px;
+    height: 25px;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
