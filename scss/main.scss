@@ -1644,6 +1644,9 @@
 // Стилизация registration.html
 .registration {
   &-info {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     margin-top: 64px;
@@ -1653,8 +1656,9 @@
   &-form {
     display: flex;
     flex-direction: column;
-    flex: 0 0 32%;
+    // flex: 0 0 32%;
     margin-right: 128px;
+    margin-left: 15px;
 
     &-txt {
       font-family: "lato-light";
@@ -1677,8 +1681,9 @@
   }
 
   &-perk {
+    width: 100%;
     max-width: 652px;
-    flex: 0 0 60%;
+    margin-right: 15px;
 
     &-title {
       font-family: "lato-light";
@@ -1824,6 +1829,30 @@
   .products {
     &-wrap {
       justify-content: space-evenly;
+    }
+  }
+
+  .registration {
+    &-form {
+      margin-left: 16px;
+      margin-right: 100px;
+    }
+
+    &-perk {
+      &-title {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &-txt {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &-item {
+        font-size: 20px;
+        line-height: 25px;
+      }
     }
   }
 
@@ -2071,6 +2100,29 @@
     margin-top: 130px;
     padding: 0;
   }
+
+  .registration {
+    &-form {
+      margin-right: 22px;
+    }
+
+    &-perk {
+      &-title {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &-txt {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &-item {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
 }
 
 @media (max-width: 698px) {
@@ -2238,6 +2290,30 @@
 
   .product-sidebar-options-details {
     padding: 0;
+  }
+
+  .registration {
+    &-info {
+      flex-direction: column;
+      margin: 0 0 96px;
+    }
+
+    &-form {
+      margin: 0 16px;
+    }
+
+    &-title {
+      padding: 60px 0 14px;
+    }
+
+    &-btn {
+      margin-bottom: 40px;
+    }
+
+    &-perk {
+      max-width: 416px;
+      margin: 0 16px;
+    }
   }
 }
 
@@ -2504,5 +2580,21 @@
   .prod-prev {
     margin-top: 82px;
     margin-bottom: 19px;
+  }
+
+  .registration {
+    &-title {
+      padding: 60px 0 14px;
+    }
+
+    &-info {
+      margin-top: 39px;
+    }
+
+    &-perk {
+      padding: 0;
+      margin: 0 0 0 16px;
+      max-width: 358px;
+    }
   }
 }

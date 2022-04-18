@@ -1889,6 +1889,9 @@
 }
 
 .registration-info {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1907,10 +1910,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 32%;
-          flex: 0 0 32%;
   margin-right: 128px;
+  margin-left: 15px;
 }
 
 .registration-form-txt {
@@ -1933,10 +1934,9 @@
 }
 
 .registration-perk {
+  width: 100%;
   max-width: 652px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+  margin-right: 15px;
 }
 
 .registration-perk-title {
@@ -2106,6 +2106,22 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .registration-form {
+    margin-left: 16px;
+    margin-right: 100px;
+  }
+  .registration-perk-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .registration-perk-txt {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .registration-perk-item {
+    font-size: 20px;
+    line-height: 25px;
   }
   .product-sidebar-options {
     margin-right: 0;
@@ -2342,6 +2358,21 @@
     margin-top: 130px;
     padding: 0;
   }
+  .registration-form {
+    margin-right: 22px;
+  }
+  .registration-perk-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-perk-txt {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-perk-item {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 698px) {
@@ -2498,6 +2529,26 @@
   }
   .product-sidebar-options-details {
     padding: 0;
+  }
+  .registration-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 96px;
+  }
+  .registration-form {
+    margin: 0 16px;
+  }
+  .registration-title {
+    padding: 60px 0 14px;
+  }
+  .registration-btn {
+    margin-bottom: 40px;
+  }
+  .registration-perk {
+    max-width: 416px;
+    margin: 0 16px;
   }
 }
 
@@ -2731,6 +2782,17 @@
   .prod-prev {
     margin-top: 82px;
     margin-bottom: 19px;
+  }
+  .registration-title {
+    padding: 60px 0 14px;
+  }
+  .registration-info {
+    margin-top: 39px;
+  }
+  .registration-perk {
+    padding: 0;
+    margin: 0 0 0 16px;
+    max-width: 358px;
   }
 }
 /*# sourceMappingURL=main.css.map */
