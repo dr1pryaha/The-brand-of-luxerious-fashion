@@ -852,7 +852,7 @@
 
 .footer-review-subscribe-form-input:hover {
   border: 1px solid #e6677893;
-  background: none;
+  background: #e1e1e1;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
@@ -1388,7 +1388,7 @@
 }
 
 .carousel-btn {
-  padding: 13px 17px;
+  padding: 12px 17px;
   background-color: #d8d8d8;
   border: none;
 }
@@ -2165,6 +2165,12 @@
     min-height: 600px;
     background-size: contain;
   }
+  .menu {
+    height: auto;
+  }
+  .search-icon-form__input:focus {
+    width: 350px;
+  }
 }
 
 @media (max-width: 815px) {
@@ -2194,6 +2200,9 @@
 @media (max-width: 768px) {
   .container {
     padding: 0 32px;
+  }
+  .search-icon-form__input:focus {
+    width: 300px;
   }
   .poster-promo {
     min-height: 368px;
@@ -2320,6 +2329,19 @@
   .hidden-card {
     display: none;
   }
+  .product-preview-carousel {
+    margin-top: 30px;
+  }
+  .product-preview-img {
+    width: 100%;
+    max-width: 466px;
+    height: 100%;
+    max-height: 565px;
+  }
+  .prod-prev {
+    margin-top: 130px;
+    padding: 0;
+  }
 }
 
 @media (max-width: 698px) {
@@ -2340,6 +2362,9 @@
 }
 
 @media (max-width: 685px) {
+  .search-icon-form__input:focus {
+    width: 200px;
+  }
   .offer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2361,6 +2386,14 @@
 }
 
 @media (max-width: 600px) {
+  .search-icon-form__input {
+    top: -5px;
+    left: -15px;
+  }
+  .search-icon-form__input:focus {
+    width: 250px;
+    background-color: #000000;
+  }
   .poster-promo {
     min-height: 450px;
     background: none;
@@ -2371,9 +2404,49 @@
   .poster-promo-text-heading {
     margin: 0;
   }
+  .product-preview-carousel {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product-preview-img {
+    position: relative;
+    width: 100%;
+    max-width: 374px;
+    height: 100%;
+    max-height: 454px;
+  }
+  .product-preview-description {
+    margin-bottom: 120px;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  .prew-btn {
+    left: 0%;
+  }
+  .next-btn {
+    right: 0%;
+  }
+  .products-adaptive {
+    margin-bottom: 15px;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
+  .search-icon-form__input {
+    top: 35px;
+    left: -15px;
+  }
+  .search-icon-form__input:focus {
+    width: 250px;
+    background-color: #000000;
+  }
   .filter-btn > span {
     display: none;
   }
@@ -2395,6 +2468,37 @@
   .product-sidebar-options-details-summary-svg {
     margin-left: 9px;
   }
+  .header-breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 46px;
+  }
+  .header-breadcrumbs-title {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .sidebar-summary {
+    font-family: "lato-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    margin-right: 25px;
+  }
+  .mr-0 {
+    margin-right: 0;
+  }
+  .product-sidebar-options-details {
+    padding: 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -2407,6 +2511,14 @@
   .account-btn,
   .cart-btn-link {
     visibility: hidden;
+  }
+  .search-icon-form__input {
+    top: -5px;
+    left: 35px;
+  }
+  .search-icon-form__input:focus {
+    width: 150px;
+    background: none;
   }
   .header-nav-list > li:not(:last-child) {
     padding: 0;
@@ -2587,6 +2699,38 @@
     width: 37px;
     height: 25px;
     margin-left: 0;
+  }
+  .product-preview-carousel {
+    margin-top: 0;
+    margin-bottom: 150px;
+  }
+  .product-preview-img {
+    position: relative;
+    width: 100%;
+    max-width: 374px;
+    height: 100%;
+    max-height: 454px;
+    margin-top: 85px;
+  }
+  .product-preview-description {
+    margin-bottom: 120px;
+  }
+  .product-description-heading {
+    margin-bottom: 32px;
+  }
+  .product-description-txt {
+    line-height: 20px;
+    max-width: 326px;
+    text-align: center;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+  }
+  .prod-prev {
+    margin-top: 82px;
+    margin-bottom: 19px;
   }
 }
 /*# sourceMappingURL=main.css.map */
