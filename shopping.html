@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./scss/normalize.css/normalize.css" />
     <link rel="stylesheet" href="./scss/main.css" />
     <link
       rel="shortcut icon"
@@ -77,7 +77,7 @@
             </div>
             <nav class="header-nav">
               <ul class="header-nav-list">
-                <li class="header-nav-item">
+                <li class="header-nav-item menu-btn-abs">
                   <label for="btn">
                     <svg
                       width="32"
@@ -174,7 +174,7 @@
                     </ul>
                   </nav>
                 </li>
-                <li class="header-nav-item">
+                <li class="header-nav-item account-btn">
                   <a href="./registration.html"
                     ><svg
                       class="header-nav-item-btn-svg"
@@ -189,7 +189,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="header-nav-item">
+                <li class="header-nav-item cart-btn-link">
                   <a href="./shopping.html"
                     ><svg
                       class="header-nav-item-btn-svg"
@@ -212,14 +212,16 @@
       </header>
       <div class="breadcrumbs-wrap">
         <aside class="header-breadcrumbs container">
-          <h3 class="header-breadcrumbs-title mark-color">Shopping Cart</h3>
+          <h3 class="header-breadcrumbs-title shopping-title mark-color">
+            Shopping Cart
+          </h3>
         </aside>
       </div>
       <!-- Основная часть сайта -->
 
       <main class="main">
         <!-- Превью одежды -->
-        <section class="shopping container">
+        <section class="shopping">
           <div class="shopping-wrap">
             <div class="shopping-cart">
               <a href="./product.html" class="shopping-cart-link">
@@ -239,7 +241,7 @@
                 <p class="shopping-cart-info-txt">Color: Red</p>
                 <p class="shopping-cart-info-txt">Size: Xl</p>
                 <p class="shopping-cart-info-txt quantity-txt">Quantity:</p>
-                <input type="number" class="quantity-cart" value="2" />
+                <input type="number" class="quantity-cart" value="2" min="1" />
               </div>
               <button type="submit" class="close-btn">
                 <svg
@@ -274,7 +276,7 @@
                 <p class="shopping-cart-info-txt">Color: Red</p>
                 <p class="shopping-cart-info-txt">Size: Xl</p>
                 <p class="shopping-cart-info-txt quantity-txt">Quantity:</p>
-                <input type="number" class="quantity-cart" value="2" />
+                <input type="number" class="quantity-cart" value="2" min="1" />
               </div>
               <button type="submit" class="close-btn">
                 <svg

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./scss/normalize.css/normalize.css" />
     <link rel="stylesheet" href="./scss/main.css" />
     <link
       rel="shortcut icon"
@@ -77,7 +77,7 @@
             </div>
             <nav class="header-nav">
               <ul class="header-nav-list">
-                <li class="header-nav-item">
+                <li class="header-nav-item menu-btn-abs">
                   <label for="btn">
                     <svg
                       width="32"
@@ -174,7 +174,7 @@
                     </ul>
                   </nav>
                 </li>
-                <li class="header-nav-item">
+                <li class="header-nav-item account-btn">
                   <a href="./registration.html"
                     ><svg
                       class="header-nav-item-btn-svg"
@@ -189,7 +189,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="header-nav-item">
+                <li class="header-nav-item cart-btn-link">
                   <a href="./shopping.html"
                     ><svg
                       class="header-nav-item-btn-svg"
@@ -230,7 +230,8 @@
                 >
               </li>
               <li class="header-breadcrumbs-menu-list-item">
-                <span class="header-breadcrumbs-menu-list-item-link mark-color"
+                <span
+                  class="header-breadcrumbs-menu-list-item-link mark-color last-breadcrumbs"
                   >New arrivals</span
                 >
               </li>
@@ -259,7 +260,11 @@
               </svg>
             </button>
 
-            <img src="./img/product/product-preview-1.png" alt="" />
+            <img
+              src="./img/product/product-preview-1.png"
+              alt="Product_name"
+              class="product-preview-img"
+            />
             <button class="carousel-btn next-btn">
               <svg
                 class="carousel-arrow"
@@ -288,7 +293,9 @@
 
             <div class="product-sidebar-options prod-prev">
               <details class="product-sidebar-options-details">
-                <summary class="product-sidebar-options-details-summary">
+                <summary
+                  class="product-sidebar-options-details-summary sidebar-summary"
+                >
                   Choose color
                   <svg
                     width="11"
@@ -351,7 +358,9 @@
                 </form>
               </details>
               <details class="product-sidebar-options-details">
-                <summary class="product-sidebar-options-details-summary">
+                <summary
+                  class="product-sidebar-options-details-summary sidebar-summary"
+                >
                   Choose size
                   <svg
                     width="11"
@@ -414,7 +423,9 @@
                 </form>
               </details>
               <details class="product-sidebar-options-details">
-                <summary class="product-sidebar-options-details-summary mr-0">
+                <summary
+                  class="product-sidebar-options-details-summary sidebar-summary mr-0"
+                >
                   Quantity
                   <svg
                     width="11"
@@ -470,7 +481,7 @@
         </section>
 
         <!-- Продукты -->
-        <section class="products">
+        <section class="products products-adaptive">
           <div class="products-wrap">
             <article class="products-card">
               <a href="./product.html">
@@ -532,7 +543,7 @@
               </button>
             </article>
 
-            <article class="products-card">
+            <article class="products-card hidden-card">
               <a href="./product.html">
                 <img
                   src="./img/product/product-3.png"
