@@ -2089,6 +2089,10 @@
   .offer-accesories {
     height: 165px;
   }
+  .shopping {
+    width: 100%;
+    max-width: 1000px;
+  }
 }
 
 @media (max-width: 1080px) {
